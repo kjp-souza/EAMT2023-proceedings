@@ -30,15 +30,15 @@
   \ifthenelse{\isodd{\value{page}}}{}
   {\thispagestyle{empty}\quad\newpage}}
 
-\newcommand{\addpaper}[5]{% #1 path; #2 label; #3 authors; #4 title;
-                          % #5 URL
+\newcommand{\addpaper}[5]{% #1 path; #2 label; #3 authors; #4 title; #5 URL
   \newoddpage
   \phantomsection
   \addcontentsline{toc}{section}{#3. \emph{#4}}  
-  \thispagestyle{fancy} %
+
+\thispagestyle{fancy} %
   
   % scriptsize / tiny
-  \lfoot{\tiny {Martins, Moniz, Fumega, Martins, Batista, Coheur, Parra, Trancoso, Turchi, Bisazza, Moorkens, Guerberof, Nurminen, Marg, Forcada (eds.)}\\
+  \lfoot{\scriptsize {\tiny Martins, Moniz, Fumega, Martins, Batista, Coheur, Parra, Trancoso, Turchi, Bisazza, Moorkens, Guerberof, Nurminen, Marg, Forcada (eds.)}\\
     {\em Proceedings of the 22nd Annual Conference of the European Association for Machine Translation}, p. \pageref{beg#2}--\pageref{end#2}\\
       Lisboa, Portugal, November 2020. %\url{#5}
   }
@@ -84,11 +84,26 @@
   -(1in+\voffset+\topmargin+\headheight+\headsep+\textheight)
   -0.6in}
 
+\newcommand{\mychapter}[1]{
+    \newpage
+    \cfoot{}
+    \vspace*{\fill}
+    \begin{center}
+    \begin{Huge}
+    \textbf{#1}
+    \end{Huge}
+    \end{center}
+    \addcontentsline{toc}{chapter}{#1}
+    \vspace*{\fill}
+    \newpage
+    \cfoot{\thepage}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%828%%%%%%%%%%%%%%%%%
 
 \usepackage{draftwatermark}
 \SetWatermarkText{Draft}
-\SetWatermarkScale{5}
+\SetWatermarkScale{1}
 
 \begin{document}
 
@@ -242,41 +257,72 @@ Oh, and please be sure to visit Lisbon when they let us travel freely. It was th
 
 \noindent Email: \url{mlf@ua.es}
 
-%\vspace{0.1cm}
-%\begin{center}
-%Name and family name\\
-%\noindent Institution
-%\end{center}
-
 
 \chapter*{Message from the Organising Committee Chairs}
 \addcontentsline{toc}{chapter}{Message from the Organising Committee Chairs}
 %\vspace{-0.9cm}
-Blah blah ...
 
+On behalf of the organising committee, we want to take this opportunity to give you a big thank you for joining us in the 22nd Annual Conference of the European Association for Machine Translation, EAMT 2020. 
+
+Sadly, this year, the COVID-19 crisis forced us to a last minute change, and we won’t be able to welcome you to Lisbon, as we wished so much. However, Unbabel and INESC-ID are extremely proud and honored to host the EAMT conference in fully virtual mode for the first time, from the 3rd to the 5th of November of 2020. 
+
+This was of course a very hard decision. In the hope that we could still host a presencial conference, we started by postponing the dates to the first week of November and securing a venue at Instituto Superior Técnico. However, it later became clear that a physical meeting would be impossible under the current circumstances, and together with the board of the European Association for Machine Translation we decided to make EAMT~2020 an on-line conference, with reduced registration fees. We would like to thank all the support from the European Association for Machine Translation in this process, in particular from its president Mikel Forcada and its secretary Carol Scarton for all their help in making this change happen smoothly. We also thank the sponsors and supporting organizations for their flexibility in adapting to a virtual conference.
+
+We are sure EAMT~2020 will be a success with the contribution of everyone! According to our predictions, we expect this edition of the EAMT conference to have one of the highest number of attendees ever. We will have a single-room conference with live talks and booster sessions for papers accepted as posters. We will do our best to make it as interactive and lively as possible. We will plan for virtual social events keeping the best spirit of Lisbon. Stay tuned!
+
+We look forward to your active participation during the three days of the conference. Do not hesitate to ask questions when the session chairs invite you to do so. Please, contribute to make this edition of the conference a fruitful forum where a multidisciplinary group of researchers, developers, practitioners, leaders, vendors, users, and translators all share experiences and motivating ideas.
+
+Finally, we would like to express our sincere appreciation to the people and organisations that have made this conference possible: the European Association for Machine Translation, in particular Mikel Forcada and Carol Scarton for all their support in changing the conference to virtual mode, our gold sponsor (Banco Português de Investimento), Silver sponsors (STAR Group and Microsoft), Bronze sponsors (Unbabel, Text\&Form, TAUS, Pangeanic, and Crosslang), supporters (Apertium and Prompsit), institutional partners Unbabel, \emph{Instituto Superior Técnico}, the \emph{Instituto de Engenharia de Sistemas e Computadores, Investigação e Desenvolvimento} and the \emph{Instituto Universitário de Lisboa}, programme chairs (Marco Turchi, Arianna Bisazza, Joss Moorkens, Ana Guerberof, Mary Nurminen, and Lena Marg), keynote speaker (Lucia Specia), and, finally but so importantly, our colleagues Sara Fumega, Bruno Martins, Fernando Batista, Luisa Coheur, Carla Parra Escartín, and Isabel Trancoso, who have worked extraordinarily hard to make this conference as pleasant and inspiring as possible. 
+
+
+%\vspace{1cm}
+%\begin{center}
+%\begin{tabular}{p{5cm}p{5cm}}
+%André Martins & Helena Moniz\\
+%IST and Unbabel & INESC-ID and Unbabel\\
+%\end{tabular}
+%\end{center}
+
+
+\vspace{1cm}
 \begin{center}
-Name and familiy name\\
-\noindent Institution
+\begin{tabular}{ll}
+André Martins\\
+IST and Unbabel\\
+\\
+\\
+Helena Moniz\\
+INESC-ID and Unbabel\\
+\end{tabular}
 \end{center}
 
 
 \chapter*{Preface by the Programme Chairs}
 \addcontentsline{toc}{chapter}{Preface by the Programme Chairs}
 
-Blah blah ..
+It is our pleasure to welcome you to the 22nd annual conference of the European Association for Machine Translation (EAMT) to be held remotely from November 3 to 5, 2020. Organizing this edition in this time of traveling and many other restrictions has been a sort of roller coaster. The whole organizing committee has worked hard to maintain the usual standards of quality and confirm the EAMT conference as the most important event in Europe in the area of machine translation for researchers, users and professional translators.
+
+Following the success of the previous edition, this year once again there are four tracks: research, user, translators, and project/product. The research track concerns novel and significant research results in any aspect of MT and related areas while the user track reports users’ experiences with MT in industry, government, NGOs, as well as innovative uses of MT. The translator track focuses on translators’ interaction with MT, including evaluation using professional translators, usability, and pricing. The project/product track offers project and products the opportunity to be presented to the wide audience of the conference.
+
+This year we have received 47 submissions to the research track, 15 submissions to the
+user track, 13 submissions to the translators’ track, and ?? descriptions of projects and products.. Each submission to the research, user and translator tracks was peer reviewed by three independent members of the Programme Committee. In the research track, 25 papers (53\%) were accepted for publication, whereas 12 papers (80\%) were accepted for the user track, and 9 papers (69\%) for the translators track. 
+Aside from regular papers from the four tracks, the programme includes an invited talk by Lucia Specia, from the University of Sheffield and Imperial College London, on “XXXXXXXXX”. We will also have a presentation by XXXX on “The WMT Shared Tasks”, and a presentation by the winner of the EAMT Best Thesis Award.
+
+We would like to thank everyone who, by offering their flexibility and extra efforts, made it possible to deal with continuously moving deadlines. In particular, we thank the Programme Committee members whose names are listed below for their high-quality reviews and recommendation which have been very useful for the Programme Chairs to make decisions. We would also like to thank all the authors for trying their best to incorporate the reviewers’ suggestions when preparing the final versions of their papers. For the papers which were not accepted, we hope that the reviewers’ comments will be useful for improving them. Finally, thanks to Mikel Forcada for all of his help and advice!
 
 \vspace{1cm}
 \begin{center}
 \begin{tabular}{ll}
-Name and famili name\\
-Institution\\
+Arianna Bisazza\\
+University of Groningen\\
 \\
 \\
-Name and family name\\
-Institution\\
+Joss Moorkens\\
+Dublin City University\\
 \end{tabular}
 
 \end{center}
+
 
 \chapter*{EAMT 2020 Committees}
 \addcontentsline{toc}{chapter}{EAMT 2020 Committees}
@@ -287,7 +333,7 @@ Institution\\
 
 \section*{Programme Chairs}
 \subsection*{Research track}
-\noindent Marco Turchi, FBK
+\noindent Marco Turchi, FBK\\
 \noindent Arianna Bisazza, Groningen Univ.
 
 \subsection*{User track}
@@ -295,7 +341,7 @@ Institution\\
 \noindent Lena Marg, Welocalize
 
 \subsection*{Translators' track}
-\noindent Joss Moorkens, DCU
+\noindent Joss Moorkens, DCU\\
 \noindent Ana Guerberof, Univ. of Surrey
 
 \section*{Organising committee}
@@ -307,6 +353,7 @@ Institution\\
 \noindent Luisa Coheur, IST and INESC-ID\\
 \noindent Isabel Trancoso, IST and INESC-ID
 
+\pagebreak
 
 \section*{Programme Committee}
 \subsection*{Research track}
@@ -399,20 +446,200 @@ Institution\\
 \noindent Martin Volk, University of Zurich\\
 \noindent Marion Weller-Di Marco, CIS - University of Munich\\
 \noindent François Yvon, LIMSI/CNRS et Université Paris-Sud\\
-\noindent Jiajun Zhang, Institute of Automation Chinese Academy of Sciences\\
+\noindent Jiajun Zhang, Institute of Automation Chinese Academy of Sciences
 
+\pagebreak
 
 \subsection*{User track}
-\noindent Name and family name, Institution\\
-\noindent Name and family name, Institution\\
-\noindent Name and family name, Institution\\
-\noindent Name and family name, Institution
+\noindent Nora Aranberri, University of the Basque Country\\
+\noindent Adam Bittlingmayer, ModelFront\\
+\noindent Bianka Buschbeck, Systran\\
+\noindent Dave Clarke, Welocalize\\
+\noindent Michael Denkowski, Amazon\\
+\noindent Félix Do Carmo, University of Surrey\\
+\noindent Thierry Etchegoyhen, Vicomtech-IK4\\
+\noindent Valeria Filippello, SDL\\
+\noindent Federico Gaspari, Università per Stranieri “Dante Alighieri” di Reggio Calabria\\
+\noindent Kim Harris\\
+\noindent Georg Kirchner, Dell \\
+\noindent Maarit Koponen, University of Helsinki\\
+\noindent László Laki, Globalese\\
+\noindent Jay Marciano, Lionbridge\\
+\noindent Marianna Martindale, University of Maryland\\
+\noindent Morgan O’Brien, McAfee\\
+\noindent Niko Papula, Multilizer\\
+\noindent Daniel Prou, European Commission\\
+\noindent Gema Ramírez-Sánchez, Prompsit Language Engineering\\
+\noindent Steve Richardson, The Church of Jesus Christ of Latter-day Saints\\
+\noindent Jon Ritzdorf, Moravia\\
+\noindent Laura Rossi, LexisNexis\\
+\noindent Yury Sharshov, LexisNexis Univentio\\
+\noindent Dimitar Shterionov, Dublin City University\\
+\noindent Charlotte Tesselaar, LexisNexis Univentio\\
+\noindent Joachim Vandenbogaert, Crosslang\\
+\noindent Andy Way, ADAPT Centre, Dublin City University\\
+\noindent Chris Wendt, Microsoft\\
+\noindent Masaru Yamada, Kansai University\\
+\noindent Anna Zaretskaya, TransPerfect
+
+\clearpage
 
 \subsection*{Translators' track}
-\noindent Name and family name, Institution\\
-\noindent Name and family name, Institution\\
-\noindent Name and family name, Institution\\
-\noindent Name and family name, Institution
+\noindent Khetam Alsharou, Imperial College London\\
+\noindent Frank Austermuhl, Aston University\\
+\noindent Sarah Bawa Mason, University of Portsmouth\\
+\noindent Sarah Berthaud, Galway-Mayo Institute of Technology\\
+\noindent Pat Cadwell, Dublin City University\\
+\noindent Sheila Castilho, Dublin City University\\
+\noindent Joke Daems, Ghent University\\
+\noindent Christophe Declercq, KU Leuven\\
+\noindent Félix do Carmo, University of Surrey\\
+\noindent Gökhan Dogru, Universitat Autònoma de Barcelona\\
+\noindent Joanna Drugan, University of East Anglia\\
+\noindent Maria Fernandez Parra, Swansea University\\
+\noindent Joanna Gough, University of Surrey\\
+\noindent Dorothy Kenny, Dublin City University\\
+\noindent Maarit Koponen, University of Helsinki\\
+\noindent Ralph Krüger, TH Köln\\
+\noindent Carlos la Orden Tovar, InsideLoc\\
+\noindent Claire Larsonneur, Université Paris 8\\
+\noindent Krzysztof Loboda, Jagiellonian University\\
+\noindent Rudy Loock, Université de Lille\\
+\noindent Lieve Macken, Ghent University\\
+\noindent Javier Mallo, Freelance Spanish Language Consultant\\
+\noindent Giulia Mattoni, Vistatec\\
+\noindent Lucas Nunes Vieira, University of Bristol\\
+\noindent Sharon O'Brien, Dublin City University\\
+\noindent Antoni Oliver, Universitat Oberta de Catalunya\\
+\noindent Maeve	Olohan, University of Manchester\\
+\noindent Constantin Orasan, University of Surrey\\
+\noindent David Orrego Carmona, Aston University\\
+\noindent Carla Parra Escartín, Unbabel\\
+\noindent Mary Phelan, Dublin City University\\
+\noindent Rubén Rodríguez de la Fuente, PayPal\\
+\noindent Alessandra Rossetti, Dublin City University\\
+\noindent Caroline Rossi, Université Grenoble Alpes\\
+\noindent Andrew Rothwell, Swansea University\\
+\noindent Akiko Sakamoto, University of Portsmouth\\
+\noindent Vilelmini Sosoni, Ionian University\\
+\noindent Carlos Teixeira, IOTA Localization Services and Trinity College Dublin
+
+
+\newoddpage
+\mainmatter
+
+\chapter*{Invited Speech}
+\addcontentsline{toc}{chapter}{Invited Speech}
+
+\section*{Exploring NMT's bag of tricks for translation quality estimation and evaluation}\label{invited}
+Lucia Specia, Imperial College and Sheffield University, UK
+\vspace{0.5cm}
+
+Neural machine translation (NMT) has become the de facto automated translation technology for language pairs where enough parallel data is available. Nevertheless, translation models are not bulletproof. Given the generally very fluent translations produced by these models, automatically assessing their general quality is arguably more challenging, yet paramount. In this talk I will argue that the solution to this problem can to a large extent be provided by NMT models themselves. I will discuss experiments demonstrating that such models provide valuable information for both translation evaluation and quality estimation. Namely, they allow for better supervised as well as fully unsupervised quality estimation models, as well as more for reliable multi-reference evaluation approaches.
+
+
+\chapter*{EAMT 2020 Best Thesis Award --- Anthony C Clarke Award}
+\addcontentsline{toc}{chapter}{EAMT 2020 Best Thesis Award --- Anthony C Clarke Award}
+
+Blah blah 
+
+
+
+
+\mychapter{Special Feature}
+
+\addproject{submissions/EAMT2018_paper_23.pdf}{p23}{Barry Haddow}{The WMT Shared Tasks}{}
+
+
+\mychapter{Research papers}
+
+\addpaper{papers_research/EAMT_2020_paper_21.pdf}{pr21}{Alessandra Rossetti, Sharon O'Brien and Patrick Cadwell}{Comprehension and Trust in Crises: Investigating the Impact of Machine Translation and Post-Editing}{}
+\addpaper{papers_research/EAMT_2020_paper_29.pdf}{pr29}{Tom Kocmi and Ondřej Bojar}{Efficiently Reusing Old Models Across Languages via Transfer Learning}{}
+\addpaper{papers_research/EAMT_2020_paper_34.pdf}{pr34}{Hao Yang, Minghan Wang, Ning Xie, Ying Qin and Yao Deng}{Efficient Transfer Learning for Quality Estimation with Bottleneck Adapter Layer}{}
+\addpaper{papers_research/EAMT_2020_paper_36.pdf}{pr36}{Yunsu Kim, Miguel Graça and Hermann Ney}{When and Why is Unsupervised Neural Machine Translation Useless?}{}
+\addpaper{papers_research/EAMT_2020_paper_43.pdf}{pr43}{Maciej Modrzejewski, Miriam Exel, Bianka Buschbeck, Thanh-Le Ha and Alexander Waibel}{Incorporating External Annotation to improve Named Entity Translation in NMT}{}
+\addpaper{papers_research/EAMT_2020_paper_46.pdf}{pr46}{Minghan Wang, Hao Yang, Ying Qin, Shiliang Sun and Yao Deng}{Unified Humor Detection Based on Sentence-pair Augmentation and Transfer Learning}{}
+\addpaper{papers_research/EAMT_2020_paper_49.pdf}{pr49}{Víctor M. Sánchez-Cartagena, Mikel L. Forcada and Felipe Sánchez-Martínez}{A multi-source approach for Breton–French hybrid machine translation}{}
+\addpaper{papers_research/EAMT_2020_paper_50.pdf}{pr50}{Allen Antony, Arghya Bhattacharya, Jaipal Goud and Radhika Mamidi}{Leveraging Multilingual Resources for Language Invariant Sentiment Analysis}{}
+\addpaper{papers_research/EAMT_2020_paper_66.pdf}{pr66}{Lukas Edman, Antonio Toral and Gertjan van Noord}{Low-Resource Unsupervised NMT: Diagnosing the Problem and Providing a Linguistically Motivated Solution}{}
+\addpaper{papers_research/EAMT_2020_paper_70.pdf}{pr70}{Jihyung Moon, Hyunchang Cho and Eunjeong L. Park}{Revisiting Round-trip Translation for Quality Estimation}{}
+\addpaper{papers_research/EAMT_2020_paper_72.pdf}{pr72}{Yuting Zhao, Mamoru Komachi, Tomoyuki Kajiwara and Chenhui Chu}{Double Attention-based Multimodal Neural Machine Translation with Semantic Image Regions}{}
+\addpaper{papers_research/EAMT_2020_paper_73.pdf}{pr73}{Maarit Koponen, Umut Sulubacak, Kaisa Vitikainen and Jörg Tiedemann}{MT for subtitling: User evaluation of post-editing productivity}{}
+\addpaper{papers_research/EAMT_2020_paper_88.pdf}{pr88}{Yuying Ye and Antonio Toral}{Fine-grained Human Evaluation of Transformer and Recurrent Approaches to Neural Machine Translation for English-to-Chinese}{}
+\addpaper{papers_research/EAMT_2020_paper_89.pdf}{pr89}{Julia Kreutzer, Nathaniel Berger and Stefan Riezler}{Correct Me If You Can: Learning from Error Corrections and Markings}{}
+\addpaper{papers_research/EAMT_2020_paper_92.pdf}{pr92}{Frederic Blain, Nikolaos Aletras and Lucia Specia}{Quality In, Quality Out: Learning from Actual Mistakes}{}
+\addpaper{papers_research/EAMT_2020_paper_97.pdf}{pr97}{Takeshi Hayakawa and Yuki Arase}{Fine-Grained Error Analysis on English-to-Japanese Machine Translation in the Medical Domain}{}
+\addpaper{papers_research/EAMT_2020_paper_107.pdf}{pr107}{Nora Aranberri}{With or without you? Effects of using machine translation to write flash fiction in the foreign language}{}
+\addpaper{papers_research/EAMT_2020_paper_109.pdf}{pr109}{Tharindu Ranasinghe, Constantin Orasan and Ruslan Mitkov}{Intelligent Translation Memory Matching and Retrieval with Sentence Encoders}{}
+\addpaper{papers_research/EAMT_2020_paper_111.pdf}{pr111}{Antonio Toral}{Reassessing Claims of Human Parity and Super-Human Performance in Machine Translation at WMT 2019}{}
+\addpaper{papers_research/EAMT_2020_paper_115.pdf}{pr115}{Kamal Kumar Gupta, Rejwanul Haque, Asif Ekbal, Pushpak Bhattacharyya and Andy Way}{Modelling Source- and Target- Language Syntactic Information as Conditional Context in Interactive Neural Machine Translation}{}
+\addpaper{papers_research/EAMT_2020_paper_118.pdf}{pr118}{António Góis, Kyunghyun Cho and André Martins}{Learning Non-Monotonic Automatic Post-Editing of Translations from Human Orderings}{}
+\addpaper{papers_research/EAMT_2020_paper_120.pdf}{pr120}{Lukas Fischer and Samuel Läubli}{What's the Difference Between Professional Human and Machine Translation? A Blind Multi-language Study on Domain-specific MT}{}
+\addpaper{papers_research/EAMT_2020_paper_122.pdf}{pr122}{António Lopes, M. Amin Farajian, Rachel Bawden, Michael Zhang and André T. Martins}{Document-level Neural MT: A Systematic Comparison}{}
+\addpaper{papers_research/EAMT_2020_paper_123.pdf}{pr123}{Amirhossein Tebbifakhr, Matteo Negri and Marco Turchi}{Automatic Translation for Multiple NLP tasks: a Multi-task Approach to Machine-oriented NMT Adaptation}{}
+\addpaper{papers_research/EAMT_2020_paper_125.pdf}{pr125}{Natália Resende, Benjamin Cowan and Andy Way}{MT syntactic priming effects on L2 English speakers}{}
+
+
+
+\mychapter{User papers}
+
+\addpaper{papers_user/EAMT_2020_paper_20.pdf}{pu20}{Sahil Manchanda and Galina Grunin}{Domain Informed Neural Machine Translation: Developing Translation Services for Healthcare Enterprise}{}
+\addpaper{papers_user/EAMT_2020_paper_38.pdf}{pu38}{Karolina Stefaniak}{Evaluating the usefulness of neural machine translation for the Polish translators in the European Commission}{}
+\addpaper{papers_user/EAMT_2020_paper_44.pdf}{pu44}{Miriam Exel, Bianka Buschbeck, Lauritz Brandt and Simona Doneva}{Terminology-Constrained Neural Machine Translation at SAP}{}
+\addpaper{papers_user/EAMT_2020_paper_47.pdf}{pu47}{Jonathan Mutal, Johanna Gerlach, Pierrette Bouillon and Hervé Spechbach}{Ellipsis Translation for a Medical Speech to Speech Translation System}{}
+\addpaper{papers_user/EAMT_2020_paper_48.pdf}{pu48}{Gema Ramírez-Sánchez, Jaume Zaragoza-Bernabeu, Marta Bañón and Sergio Ortiz Rojas}{Bifixer and Bicleaner: two open-source tools to clean your parallel data}{}
+\addpaper{papers_user/EAMT_2020_paper_54.pdf}{pu54}{Felipe Sánchez-Martínez, Víctor M. Sánchez-Cartagena, Juan Antonio Pérez-Ortiz, Mikel L. Forcada, Miquel Esplà-Gomis, Andrew Secker, Susie Coleman and Julie Wall}{An English-Swahili parallel corpus and its use for neural machine translation in the news domain}{}
+\addpaper{papers_user/EAMT_2020_paper_55.pdf}{pu55}{Mara Nunziatini and Lena Marg}{Machine Translation Post-Editing Levels: Breaking Away from the Tradition and Delivering a Tailored Service}{}
+\addpaper{papers_user/EAMT_2020_paper_99.pdf}{pu99}{Miguel Domingo, Mercedes García-Martínez, Álvaro Peris, Alexandre Helle, Amando Estela, Laurent Bié, Francisco Casacuberta and Manuel Herranz}{A User Study of the Incremental Learning in NMT}{}
+\addpaper{papers_user/EAMT_2020_paper_105.pdf}{pu105}{Daniel Marín Buj, Daniel Ibáñez García, Zuzanna Parcheta and Francisco Casacuberta Nolla}{NICE: Neural Integrated Custom Engines}{}
+\addpaper{papers_user/EAMT_2020_paper_117.pdf}{pu117}{Anna Zaretskaya, José Conceição and Frederick Bane}{Estimation vs Metrics: is QE Useful for MT Model Selection?}{}
+\addpaper{papers_user/EAMT_2020_paper_127.pdf}{pu127}{María Concepción Laguardia}{Persistent MT on software technical documentation - a case study}{}
+\addpaper{papers_user/EAMT_2020_paper_128.pdf}{pu128}{Georg Kirchner}{Insights from Gathering MT Productivity Metrics at Scale}{}
+
+
+\mychapter{Translators' papers}
+
+\addproject{papers_translator/EAMT_2020_paper_28.pdf}{pt28}{Maja Popovic}{On the differences between human translations}{}
+\addproject{papers_translator/EAMT_2020_paper_57.pdf}{pt57}{Paula Estrella, Emiliano Cuenca, Laura Bruno, Jonathan Mutal, Sabrina Girletti, Lise Volkart and Pierrette Bouillon}{Re-design of the Machine Translation Training Tool (MT3)}{}
+\addproject{papers_translator/EAMT_2020_paper_61.pdf}{pt61}{Mateja Arnejšek and Alenka Unk}{Multidimensional assessment of the eTranslation output for English–Slovene}{}
+\addproject{papers_translator/EAMT_2020_paper_65.pdf}{pt65}{Randy Scansani and Lamis Mhedhbi}{How do LSPs compute MT discounts? Presenting a company's pipeline and its use}{}
+\addproject{papers_translator/EAMT_2020_paper_79.pdf}{pt79}{Antoni Oliver, Sergi Alvarez and Toni Badia}{PosEdiOn: Post-Editing Assessment in PythOn}{}
+\addproject{papers_translator/EAMT_2020_paper_91.pdf}{pt91}{Sergi Alvarez, Antoni Oliver and Toni Badia}{Quantitative Analysis of Post-Editing Effort Indicators for NMT}{}
+\addproject{papers_translator/EAMT_2020_paper_100.pdf}{pt100}{Félix Do Carmo}{Comparing Post-editing based on Four Editing Actions against Translating with an Auto-Complete Feature}{}
+\addproject{papers_translator/EAMT_2020_paper_102.pdf}{pt102}{Meghan Dowling, Sheila Castilho, Joss Moorkens, Teresa Lynn and Andy Way}{A human evaluation of English-Irish statistical and neural machine translation}{}
+\addproject{papers_translator/EAMT_2020_paper_129.pdf}{pt129}{Maria Stasimioti, Vilelmini Sosoni, Katia Kermanidis and Despoina Mouratidis}{Machine Translation Quality: A comparative evaluation of SMT, NMT and tailored-NMT outputs}{}
+
+
+\mychapter{Project/product descriptions}
+
+\addproject{papers_prodproj/EAMT_2020_paper_19.pdf}{pp19}{Felipe Soares, Anna Zaretskaya and Diego Bartolome}{QE Viewer: an Open-Source Tool for Visualization of Machine Translation Quality Estimation Results}{}
+\addproject{papers_prodproj/EAMT_2020_paper_26.pdf}{pp26}{Sheila Castilho}{Document-Level Machine Translation Evaluation Project: Methodology, Effort and Inter-Annotator Agreement}{}
+\addproject{papers_prodproj/EAMT_2020_paper_31.pdf}{pp31}{Felix Hieber, Tobias Domhan, Michael Denkowski and David Vilar}{Sockeye 2: A Toolkit for Neural Machine Translation}{}
+\addproject{papers_prodproj/EAMT_2020_paper_32.pdf}{pp32}{Amir Kamran, Dace Dzeguze, Jaap van der Meer, Milica Panic, Alessandro Cattelan, Daniele Patrioli, Luisa Bentivogli and Marco Turchi}{CEF Data Marketplace: Powering a Long-term Supply of Language Data}{}
+\addproject{papers_prodproj/EAMT_2020_paper_33.pdf}{pp33}{Maja Popovic}{QRev: Machine Translation of User Reviews: What Influences the Translation Quality?}{}
+\addproject{papers_prodproj/EAMT_2020_paper_45.pdf}{pp45}{Ondřej Bojar, Dominik Macháček, Sangeet Sagar, Otakar Smrž, Jonáš Kratochvíl, Ebrahim Ansari, Dario Franceschini, Chiara Canton, Ivan Simonini, Thai-Son Nguyen, Felix Schneider, Sebastian Stücker, Alex Waibel, Barry Haddow, Rico Sennrich and Philip Williams}{ELITR: European Live Translator}{}
+\addproject{papers_prodproj/EAMT_2020_paper_63.pdf}{pp63}{Andy Way, Petra Bago, Jane Dunne, Federico Gaspari, Andre Kåsen, Gauti Kristmannsson, Helen McHugh, Jon Arild Olsen, Dana Davis Sheridan, Páraic Sheridan and John Tinsley}{Progress of the PRINCIPLE Project: Promoting MT for Croatian, Icelandic, Irish and Norwegian}{}
+\addproject{papers_prodproj/EAMT_2020_paper_76.pdf}{pp76}{Antoni Oliver}{MTUOC: easy and free integration of NMT systems in professional translation environments}{}
+\addproject{papers_prodproj/EAMT_2020_paper_77.pdf}{pp77}{Celia Rico, María Del Mar Sánchez Ramos and Antoni Oliver}{INMIGRA3: building a case for NGOs and NMT}{}
+\addproject{papers_prodproj/EAMT_2020_paper_81.pdf}{pp81}{Ēriks Ajausks, Victoria Arranz, Laurent Bié, Aleix Cerdà-i-Cucó, Khalid Choukri, Montse Cuadros, Hans Degroote, Amando Estela, Thierry Etchegoyhen, Mercedes García-Martínez, Aitor García-Pablos, Manuel Herranz, Alejandro Kohan, Maite Melero, Mike Rosner, Roberts Rozis, Patrick Paroubek, Artūrs Vasiļevskis and Pierre Zweigenbaum}{The Multilingual Anonymisation Toolkit for Public Administrations (MAPA) Project}{}
+\addproject{papers_prodproj/EAMT_2020_paper_83.pdf}{pp83}{Heidi Depraetere, Joachim Van den Bogaert, Sara Szoc and Tom Vanallemeersch}{APE-QUEST: an MT Quality Gate}{}
+\addproject{papers_prodproj/EAMT_2020_paper_84.pdf}{pp84}{Joachim Van den Bogaert, Tom Vanallemeersch and Heidi Depraetere}{MICE: a middleware layer for MT}{}
+\addproject{papers_prodproj/EAMT_2020_paper_85.pdf}{pp85}{Laurent Bié, Aleix Cerdà-i-Cucó, Hans Degroote, Amando Estela, Mercedes García-Martínez, Manuel Herranz, Alejandro Kohan, Maite Melero, Tony O’dowd, Sinéad O’gorman, Mārcis Pinnis, Roberts Rozis, Riccardo Superbo and Artūrs Vasiļevskis}{Neural Translation for the European Union (NTEU) Project}{}
+\addproject{papers_prodproj/EAMT_2020_paper_86.pdf}{pp86}{Jörg Tiedemann and Santhosh Thottingal}{OPUS-MT -- Building open translation services for the World}{}
+\addproject{papers_prodproj/EAMT_2020_paper_94.pdf}{pp94}{Joachim Van den Bogaert, Arne Defauw, Frederic Everaert, Koen Van Winckel, Alina Kramchaninova, Anna Bardadym, Tom Vanallemeersch, Pavel Smrž and Michal Hradiš}{OCR, Classification \& Machine Translation (OCCAM)}{}
+\addproject{papers_prodproj/EAMT_2020_paper_95.pdf}{pp95}{Joachim Van den Bogaert, Arne Defauw, Sara Szoc, Frederic Everaert, Koen Van Winckel, Alina Kramchaninova, Anna Bardadym and Tom Vanallemeersch}{CEFAT4Cities, a Natural Language Layer for the  ISA2 Core Public Service Vocabulary}{}
+\addproject{papers_prodproj/EAMT_2020_paper_101.pdf}{pp101}{Lieve Macken, Margot Fonteyne, Arda Tezcan and Joke Daems}{Assessing the Comprehensibility of Automatic Translations (ArisToCAT)}{}
+\addproject{papers_prodproj/EAMT_2020_paper_104.pdf}{pp104}{Judith Klein and Giorgio Bernardinello}{Let MT simplify and speed up your Alignment for TM creation}{}
+\addproject{papers_prodproj/EAMT_2020_paper_106.pdf}{pp106}{Reinhard Rapp and George Tambouratzis}{An Overview of the SEBAMAT Project}{}
+\addproject{papers_prodproj/EAMT_2020_paper_108.pdf}{pp108}{Andre Filipe Torres Martins}{DeepSPIN: Deep Structured Prediction for Natural Language Processing}{}
+\addproject{papers_prodproj/EAMT_2020_paper_110.pdf}{pp110}{Andre Filipe Torres Martins, Joao Graca, Paulo Dimas, Helena Moniz and Graham Neubig}{Project MAIA: Multilingual AI Agent Assistant}{}
+\addproject{papers_prodproj/EAMT_2020_paper_126.pdf}{pp126}{Natália Resende and Andy Way}{MTrill project: Machine Translation impact on language learning}{}
+
+\newpage
+\cfoot{}
+\phantom{x}
+
+
 
 \chapter*{Sponsors}
 \addcontentsline{toc}{chapter}{Sponsors}
@@ -488,179 +715,4 @@ Institution\\
 \includegraphics[width=0.6\columnwidth]{logos/inescid-logo.png}
 \end{center}
 
-\newoddpage
-\mainmatter
-
-\chapter*{Invited Speech}
-\addcontentsline{toc}{chapter}{Invited Speech}
-
-\section*{Exploring NMT's bag of tricks for translation quality estimation and evaluation}\label{invited}
-Lucia Specia, Imperial College and Sheffield University, UK
-\vspace{0.5cm}
-
-Neural machine translation (NMT) has become the de facto automated translation technology for language pairs where enough parallel data is available. Nevertheless, translation models are not bulletproof. Given the generally very fluent translations produced by these models, automatically assessing their general quality is arguably more challenging, yet paramount. In this talk I will argue that the solution to this problem can to a large extent be provided by NMT models themselves. I will discuss experiments demonstrating that such models provide valuable information for both translation evaluation and quality estimation. Namely, they allow for better supervised as well as fully unsupervised quality estimation models, as well as more for reliable multi-reference evaluation approaches.
-
-
-\chapter*{EAMT 2020 Best Thesis Award --- Anthony C Clarke Award}
-\addcontentsline{toc}{chapter}{EAMT 2020 Best Thesis Award --- Anthony C Clarke Award}
-
-Blah blah 
-
-%\addpaper{submissions/best-thesis.pdf}{pthesis}{Daniel Beck}{Gaussian Processes for Text Regression}
-
-\newpage %\chapter*{Special Feature}
-\cfoot{}
-\vspace*{\fill}
-\begin{center}
-\begin{Huge}
-\textbf{Special Feature}
-\end{Huge}
-\end{center}
-\addcontentsline{toc}{chapter}{Special Feature}
-\vspace*{\fill}
-\newpage
-\cfoot{\thepage}
-
-\addproject{submissions/EAMT2018_paper_23.pdf}{p23}{Barry Haddow}{The WMT Shared Tasks}{}
-
-
-\newpage %\chapter*{Research papers}
-\cfoot{}
-\vspace*{\fill}
-\begin{center}
-\begin{Huge}
-\textbf{Research papers}
-\end{Huge}
-\end{center}
-\addcontentsline{toc}{chapter}{Research papers}
-\vspace*{\fill}
-\newpage
-\cfoot{\thepage}
-
-%\addpaper{submissions/EAMT2018_paper_79.pdf}{p79}{Ruchit Agrawal, Marco Turchi and Matteo Negri}{Contextual Handling in Neural Machine Translation: Look behind, ahead and on both sides}{}
-%\addpaper{submissions/EAMT2018_paper_80.pdf}{p80}{Nora Aranberri and Jose A. Pascual}{Towards a post-editing recommendation system for Spanish--Basque machine translation}{}
-\addpaper{papers_research/EAMT_2020_paper_21.pdf}{pr21}{Alessandra Rossetti, Sharon O'Brien and Patrick Cadwell}{Comprehension and Trust in Crises: Investigating the Impact of Machine Translation and Post-Editing}{}
-\addpaper{papers_research/EAMT_2020_paper_29.pdf}{pr29}{Tom Kocmi and Ondřej Bojar}{Efficiently Reusing Old Models Across Languages via Transfer Learning}{}
-\addpaper{papers_research/EAMT_2020_paper_34.pdf}{pr34}{Hao Yang, Minghan Wang, Ning Xie, Ying Qin and Yao Deng}{Efficient Transfer Learning for Quality Estimation with Bottleneck Adapter Layer}{}
-\addpaper{papers_research/EAMT_2020_paper_36.pdf}{pr36}{Yunsu Kim, Miguel Graça and Hermann Ney}{When and Why is Unsupervised Neural Machine Translation Useless?}{}
-\addpaper{papers_research/EAMT_2020_paper_43.pdf}{pr43}{Maciej Modrzejewski, Miriam Exel, Bianka Buschbeck, Thanh-Le Ha and Alexander Waibel}{Incorporating External Annotation to improve Named Entity Translation in NMT}{}
-\addpaper{papers_research/EAMT_2020_paper_46.pdf}{pr46}{Minghan Wang, Hao Yang, Ying Qin, Shiliang Sun and Yao Deng}{Unified Humor Detection Based on Sentence-pair Augmentation and Transfer Learning}{}
-\addpaper{papers_research/EAMT_2020_paper_49.pdf}{pr49}{Víctor M. Sánchez-Cartagena, Mikel L. Forcada and Felipe Sánchez-Martínez}{A multi-source approach for Breton–French hybrid machine translation}{}
-\addpaper{papers_research/EAMT_2020_paper_50.pdf}{pr50}{Allen Antony, Arghya Bhattacharya, Jaipal Goud and Radhika Mamidi}{Leveraging Multilingual Resources for Language Invariant Sentiment Analysis}{}
-\addpaper{papers_research/EAMT_2020_paper_66.pdf}{pr66}{Lukas Edman, Antonio Toral and Gertjan van Noord}{Low-Resource Unsupervised NMT: Diagnosing the Problem and Providing a Linguistically Motivated Solution}{}
-\addpaper{papers_research/EAMT_2020_paper_70.pdf}{pr70}{Jihyung Moon, Hyunchang Cho and Eunjeong L. Park}{Revisiting Round-trip Translation for Quality Estimation}{}
-\addpaper{papers_research/EAMT_2020_paper_72.pdf}{pr72}{Yuting Zhao, Mamoru Komachi, Tomoyuki Kajiwara and Chenhui Chu}{Double Attention-based Multimodal Neural Machine Translation with Semantic Image Regions}{}
-\addpaper{papers_research/EAMT_2020_paper_73.pdf}{pr73}{Maarit Koponen, Umut Sulubacak, Kaisa Vitikainen and Jörg Tiedemann}{MT for subtitling: User evaluation of post-editing productivity}{}
-\addpaper{papers_research/EAMT_2020_paper_88.pdf}{pr88}{Yuying Ye and Antonio Toral}{Fine-grained Human Evaluation of Transformer and Recurrent Approaches to Neural Machine Translation for English-to-Chinese}{}
-\addpaper{papers_research/EAMT_2020_paper_89.pdf}{pr89}{Julia Kreutzer, Nathaniel Berger and Stefan Riezler}{Correct Me If You Can: Learning from Error Corrections and Markings}{}
-\addpaper{papers_research/EAMT_2020_paper_92.pdf}{pr92}{Frederic Blain, Nikolaos Aletras and Lucia Specia}{Quality In, Quality Out: Learning from Actual Mistakes}{}
-\addpaper{papers_research/EAMT_2020_paper_97.pdf}{pr97}{Takeshi Hayakawa and Yuki Arase}{Fine-Grained Error Analysis on English-to-Japanese Machine Translation in the Medical Domain}{}
-\addpaper{papers_research/EAMT_2020_paper_107.pdf}{pr107}{Nora Aranberri}{With or without you? Effects of using machine translation to write flash fiction in the foreign language}{}
-\addpaper{papers_research/EAMT_2020_paper_109.pdf}{pr109}{Tharindu Ranasinghe, Constantin Orasan and Ruslan Mitkov}{Intelligent Translation Memory Matching and Retrieval with Sentence Encoders}{}
-\addpaper{papers_research/EAMT_2020_paper_111.pdf}{pr111}{Antonio Toral}{Reassessing Claims of Human Parity and Super-Human Performance in Machine Translation at WMT 2019}{}
-\addpaper{papers_research/EAMT_2020_paper_115.pdf}{pr115}{Kamal Kumar Gupta, Rejwanul Haque, Asif Ekbal, Pushpak Bhattacharyya and Andy Way}{Modelling Source- and Target- Language Syntactic Information as Conditional Context in Interactive Neural Machine Translation}{}
-\addpaper{papers_research/EAMT_2020_paper_118.pdf}{pr118}{António Góis, Kyunghyun Cho and André Martins}{Learning Non-Monotonic Automatic Post-Editing of Translations from Human Orderings}{}
-\addpaper{papers_research/EAMT_2020_paper_120.pdf}{pr120}{Lukas Fischer and Samuel Läubli}{What's the Difference Between Professional Human and Machine Translation? A Blind Multi-language Study on Domain-specific MT}{}
-\addpaper{papers_research/EAMT_2020_paper_122.pdf}{pr122}{António Lopes, M. Amin Farajian, Rachel Bawden, Michael Zhang and André T. Martins}{Document-level Neural MT: A Systematic Comparison}{}
-\addpaper{papers_research/EAMT_2020_paper_123.pdf}{pr123}{Amirhossein Tebbifakhr, Matteo Negri and Marco Turchi}{Automatic Translation for Multiple NLP tasks: a Multi-task Approach to Machine-oriented NMT Adaptation}{}
-\addpaper{papers_research/EAMT_2020_paper_125.pdf}{pr125}{Natália Resende, Benjamin Cowan and Andy Way}{MT syntactic priming effects on L2 English speakers}{}
-
-\newpage %\chapter*{User papers}
-\cfoot{}
-\vspace*{\fill}
-\begin{center}
-\begin{Huge}
-\textbf{User papers}
-\end{Huge}
-\end{center}
-\addcontentsline{toc}{chapter}{User papers}
-\vspace*{\fill}
-\newpage
-\cfoot{\thepage}
-
-%\addpaper{submissions/EAMT2018_paper_78.pdf}{p78}{Pierrette Bouillon, Sabrina Girletti, Paula Estrella, Jonathan Mutal, Martina Bellodi and Beatrice Bircher}{Integrating MT at Swiss Post's Language Service: preliminary results}{}
-%\addpaper{submissions/EAMT2018_paper_52.pdf}{p52}{Sandipan Dandapat and Christian Federmann}{Iterative Data Augmentation for Neural Machine Translation: a Low Resource Case Study for English--Telugu}{}
-\addpaper{papers_user/EAMT_2020_paper_20.pdf}{pu20}{Sahil Manchanda and Galina Grunin}{Domain Informed Neural Machine Translation: Developing Translation Services for Healthcare Enterprise}{}
-\addpaper{papers_user/EAMT_2020_paper_38.pdf}{pu38}{Karolina Stefaniak}{Evaluating the usefulness of neural machine translation for the Polish translators in the European Commission}{}
-\addpaper{papers_user/EAMT_2020_paper_44.pdf}{pu44}{Miriam Exel, Bianka Buschbeck, Lauritz Brandt and Simona Doneva}{Terminology-Constrained Neural Machine Translation at SAP}{}
-\addpaper{papers_user/EAMT_2020_paper_47.pdf}{pu47}{Jonathan Mutal, Johanna Gerlach, Pierrette Bouillon and Hervé Spechbach}{Ellipsis Translation for a Medical Speech to Speech Translation System}{}
-\addpaper{papers_user/EAMT_2020_paper_48.pdf}{pu48}{Gema Ramírez-Sánchez, Jaume Zaragoza-Bernabeu, Marta Bañón and Sergio Ortiz Rojas}{Bifixer and Bicleaner: two open-source tools to clean your parallel data}{}
-\addpaper{papers_user/EAMT_2020_paper_54.pdf}{pu54}{Felipe Sánchez-Martínez, Víctor M. Sánchez-Cartagena, Juan Antonio Pérez-Ortiz, Mikel L. Forcada, Miquel Esplà-Gomis, Andrew Secker, Susie Coleman and Julie Wall}{An English-Swahili parallel corpus and its use for neural machine translation in the news domain}{}
-\addpaper{papers_user/EAMT_2020_paper_55.pdf}{pu55}{Mara Nunziatini and Lena Marg}{Machine Translation Post-Editing Levels: Breaking Away from the Tradition and Delivering a Tailored Service}{}
-\addpaper{papers_user/EAMT_2020_paper_99.pdf}{pu99}{Miguel Domingo, Mercedes García-Martínez, Álvaro Peris, Alexandre Helle, Amando Estela, Laurent Bié, Francisco Casacuberta and Manuel Herranz}{A User Study of the Incremental Learning in NMT}{}
-\addpaper{papers_user/EAMT_2020_paper_105.pdf}{pu105}{Daniel Marín Buj, Daniel Ibáñez García, Zuzanna Parcheta and Francisco Casacuberta Nolla}{NICE: Neural Integrated Custom Engines}{}
-\addpaper{papers_user/EAMT_2020_paper_117.pdf}{pu117}{Anna Zaretskaya, José Conceição and Frederick Bane}{Estimation vs Metrics: is QE Useful for MT Model Selection?}{}
-\addpaper{papers_user/EAMT_2020_paper_127.pdf}{pu127}{María Concepción Laguardia}{Persistent MT on software technical documentation - a case study}{}
-\addpaper{papers_user/EAMT_2020_paper_128.pdf}{pu128}{Georg Kirchner}{Insights from Gathering MT Productivity Metrics at Scale}{}
-
-
-\newpage %\chapter*{Translatiors' papers}
-\cfoot{}
-\vspace*{\fill}
-\begin{center}
-\begin{Huge}
-\textbf{Translators' papers}
-\end{Huge}
-\end{center}
-\addcontentsline{toc}{chapter}{Translators' papers}
-\vspace*{\fill}
-\newpage
-\cfoot{\thepage}
-
-%\addproject{submissions/EAMT2018_paper_63.pdf}{p63}{Félix Do Carmo}{Does Machine Translation Really Produce Translations?}{}
-%\addproject{submissions/EAMT2018_paper_99.pdf}{p99}{Laura Bruno, Antonio Miloro, Paula Estrella and Mariona Sabaté Carrove}{Pre-professional pre-conceptions?}{}
-\addproject{papers_translator/EAMT_2020_paper_28.pdf}{pt28}{Maja Popovic}{On the differences between human translations}{}
-\addproject{papers_translator/EAMT_2020_paper_57.pdf}{pt57}{Paula Estrella, Emiliano Cuenca, Laura Bruno, Jonathan Mutal, Sabrina Girletti, Lise Volkart and Pierrette Bouillon}{Re-design of the Machine Translation Training Tool (MT3)}{}
-\addproject{papers_translator/EAMT_2020_paper_61.pdf}{pt61}{Mateja Arnejšek and Alenka Unk}{Multidimensional assessment of the eTranslation output for English–Slovene}{}
-\addproject{papers_translator/EAMT_2020_paper_65.pdf}{pt65}{Randy Scansani and Lamis Mhedhbi}{How do LSPs compute MT discounts? Presenting a company's pipeline and its use}{}
-\addproject{papers_translator/EAMT_2020_paper_79.pdf}{pt79}{Antoni Oliver, Sergi Alvarez and Toni Badia}{PosEdiOn: Post-Editing Assessment in PythOn}{}
-\addproject{papers_translator/EAMT_2020_paper_91.pdf}{pt91}{Sergi Alvarez, Antoni Oliver and Toni Badia}{Quantitative Analysis of Post-Editing Effort Indicators for NMT}{}
-\addproject{papers_translator/EAMT_2020_paper_100.pdf}{pt100}{Félix Do Carmo}{Comparing Post-editing based on Four Editing Actions against Translating with an Auto-Complete Feature}{}
-\addproject{papers_translator/EAMT_2020_paper_102.pdf}{pt102}{Meghan Dowling, Sheila Castilho, Joss Moorkens, Teresa Lynn and Andy Way}{A human evaluation of English-Irish statistical and neural machine translation}{}
-\addproject{papers_translator/EAMT_2020_paper_129.pdf}{pt129}{Maria Stasimioti, Vilelmini Sosoni, Katia Kermanidis and Despoina Mouratidis}{Machine Translation Quality: A comparative evaluation of SMT, NMT and tailored-NMT outputs}{}
-
-
-
-\newpage %\chapter*{Project/product descriptions}
-\cfoot{}
-\vspace*{\fill}
-\begin{center}
-\begin{Huge}
-\textbf{Project/product descriptions}
-\end{Huge}
-\end{center}
-\addcontentsline{toc}{chapter}{Project/product descriptions}
-\vspace*{\fill}
-\newpage
-\cfoot{\thepage}
-
-%\addproject{submissions/EAMT2018_paper_67.pdf}{p67}{Juan A. Alonso and Albert Llorens}{OctaveMT: Putting Three Birds into One Cage}{}
-%\addproject{submissions/EAMT2018_paper_5.pdf}{p5}{Diego Bartolomé and José Masa}{TransPerfect’s Private Neural Neural Machine Translation Portal}{}
-\addproject{papers_prodproj/EAMT_2020_paper_19.pdf}{pp19}{Felipe Soares, Anna Zaretskaya and Diego Bartolome}{QE Viewer: an Open-Source Tool for Visualization of Machine Translation Quality Estimation Results}{}
-\addproject{papers_prodproj/EAMT_2020_paper_26.pdf}{pp26}{Sheila Castilho}{Document-Level Machine Translation Evaluation Project: Methodology, Effort and Inter-Annotator Agreement}{}
-\addproject{papers_prodproj/EAMT_2020_paper_31.pdf}{pp31}{Felix Hieber, Tobias Domhan, Michael Denkowski and David Vilar}{Sockeye 2: A Toolkit for Neural Machine Translation}{}
-\addproject{papers_prodproj/EAMT_2020_paper_32.pdf}{pp32}{Amir Kamran, Dace Dzeguze, Jaap van der Meer, Milica Panic, Alessandro Cattelan, Daniele Patrioli, Luisa Bentivogli and Marco Turchi}{CEF Data Marketplace: Powering a Long-term Supply of Language Data}{}
-\addproject{papers_prodproj/EAMT_2020_paper_33.pdf}{pp33}{Maja Popovic}{QRev: Machine Translation of User Reviews: What Influences the Translation Quality?}{}
-\addproject{papers_prodproj/EAMT_2020_paper_45.pdf}{pp45}{Ondřej Bojar, Dominik Macháček, Sangeet Sagar, Otakar Smrž, Jonáš Kratochvíl, Ebrahim Ansari, Dario Franceschini, Chiara Canton, Ivan Simonini, Thai-Son Nguyen, Felix Schneider, Sebastian Stücker, Alex Waibel, Barry Haddow, Rico Sennrich and Philip Williams}{ELITR: European Live Translator}{}
-\addproject{papers_prodproj/EAMT_2020_paper_63.pdf}{pp63}{Andy Way, Petra Bago, Jane Dunne, Federico Gaspari, Andre Kåsen, Gauti Kristmannsson, Helen McHugh, Jon Arild Olsen, Dana Davis Sheridan, Páraic Sheridan and John Tinsley}{Progress of the PRINCIPLE Project: Promoting MT for Croatian, Icelandic, Irish and Norwegian}{}
-\addproject{papers_prodproj/EAMT_2020_paper_76.pdf}{pp76}{Antoni Oliver}{MTUOC: easy and free integration of NMT systems in professional translation environments}{}
-\addproject{papers_prodproj/EAMT_2020_paper_77.pdf}{pp77}{Celia Rico, María Del Mar Sánchez Ramos and Antoni Oliver}{INMIGRA3: building a case for NGOs and NMT}{}
-\addproject{papers_prodproj/EAMT_2020_paper_81.pdf}{pp81}{Ēriks Ajausks, Victoria Arranz, Laurent Bié, Aleix Cerdà-i-Cucó, Khalid Choukri, Montse Cuadros, Hans Degroote, Amando Estela, Thierry Etchegoyhen, Mercedes García-Martínez, Aitor García-Pablos, Manuel Herranz, Alejandro Kohan, Maite Melero, Mike Rosner, Roberts Rozis, Patrick Paroubek, Artūrs Vasiļevskis and Pierre Zweigenbaum}{The Multilingual Anonymisation Toolkit for Public Administrations (MAPA) Project}{}
-\addproject{papers_prodproj/EAMT_2020_paper_83.pdf}{pp83}{Heidi Depraetere, Joachim Van den Bogaert, Sara Szoc and Tom Vanallemeersch}{APE-QUEST: an MT Quality Gate}{}
-\addproject{papers_prodproj/EAMT_2020_paper_84.pdf}{pp84}{Joachim Van den Bogaert, Tom Vanallemeersch and Heidi Depraetere}{MICE: a middleware layer for MT}{}
-\addproject{papers_prodproj/EAMT_2020_paper_85.pdf}{pp85}{Laurent Bié, Aleix Cerdà-i-Cucó, Hans Degroote, Amando Estela, Mercedes García-Martínez, Manuel Herranz, Alejandro Kohan, Maite Melero, Tony O’dowd, Sinéad O’gorman, Mārcis Pinnis, Roberts Rozis, Riccardo Superbo and Artūrs Vasiļevskis}{Neural Translation for the European Union (NTEU) Project}{}
-\addproject{papers_prodproj/EAMT_2020_paper_86.pdf}{pp86}{Jörg Tiedemann and Santhosh Thottingal}{OPUS-MT -- Building open translation services for the World}{}
-\addproject{papers_prodproj/EAMT_2020_paper_94.pdf}{pp94}{Joachim Van den Bogaert, Arne Defauw, Frederic Everaert, Koen Van Winckel, Alina Kramchaninova, Anna Bardadym, Tom Vanallemeersch, Pavel Smrž and Michal Hradiš}{OCR, Classification \& Machine Translation (OCCAM)}{}
-\addproject{papers_prodproj/EAMT_2020_paper_95.pdf}{pp95}{Joachim Van den Bogaert, Arne Defauw, Sara Szoc, Frederic Everaert, Koen Van Winckel, Alina Kramchaninova, Anna Bardadym and Tom Vanallemeersch}{CEFAT4Cities, a Natural Language Layer for the  ISA2 Core Public Service Vocabulary}{}
-\addproject{papers_prodproj/EAMT_2020_paper_101.pdf}{pp101}{Lieve Macken, Margot Fonteyne, Arda Tezcan and Joke Daems}{Assessing the Comprehensibility of Automatic Translations (ArisToCAT)}{}
-\addproject{papers_prodproj/EAMT_2020_paper_104.pdf}{pp104}{Judith Klein and Giorgio Bernardinello}{Let MT simplify and speed up your Alignment for TM creation}{}
-\addproject{papers_prodproj/EAMT_2020_paper_106.pdf}{pp106}{Reinhard Rapp and George Tambouratzis}{An Overview of the SEBAMAT Project}{}
-\addproject{papers_prodproj/EAMT_2020_paper_108.pdf}{pp108}{Andre Filipe Torres Martins}{DeepSPIN: Deep Structured Prediction for Natural Language Processing}{}
-\addproject{papers_prodproj/EAMT_2020_paper_110.pdf}{pp110}{Andre Filipe Torres Martins, Joao Graca, Paulo Dimas, Helena Moniz and Graham Neubig}{Project MAIA: Multilingual AI Agent Assistant}{}
-\addproject{papers_prodproj/EAMT_2020_paper_126.pdf}{pp126}{Natália Resende and Andy Way}{MTrill project: Machine Translation impact on language learning}{}
-
-
-\newpage
-\cfoot{}
-\phantom{x}
 \end{document}

@@ -63,7 +63,7 @@
   \phantomsection
   \addcontentsline{toc}{section}{#3. \emph{#4}}  
   \thispagestyle{fancy} %
-  \lfoot{\tiny {Martins, Moniz, Fumega, Martins, Batista, Coheur, Parra, Trancoso, Turchi, Bisazza, Moorkens, Guerberof, Nurminen, Marg, Forcada (eds.)}\\
+  \lfoot{\scriptsize {\tiny Martins, Moniz, Fumega, Martins, Batista, Coheur, Parra, Trancoso, Turchi, Bisazza, Moorkens, Guerberof, Nurminen, Marg, Forcada (eds.)}\\
     {\em Proceedings of the 22nd Annual Conference of the European Association for Machine Translation}, p. \pageref{beg#2}\\
       Lisboa, Portugal, November 2020. %\url{#5}
   }
@@ -86,6 +86,7 @@
 
 \newcommand{\mychapter}[1]{
     \newpage
+    \phantomsection{}
     \cfoot{}
     \vspace*{\fill}
     \begin{center}
@@ -482,6 +483,9 @@ Dublin City University\\
 \noindent Masaru Yamada, Kansai University\\
 \noindent Anna Zaretskaya, TransPerfect
 
+\subsubsection*{Subreviewers}
+\noindent Natasha Latysheva, Welocalize
+
 \clearpage
 
 \subsection*{Translators' track}
@@ -599,41 +603,42 @@ Blah blah
 
 \mychapter{Translators' papers}
 
-\addproject{papers_translator/EAMT_2020_paper_28.pdf}{pt28}{Maja Popovic}{On the differences between human translations}{}
-\addproject{papers_translator/EAMT_2020_paper_57.pdf}{pt57}{Paula Estrella, Emiliano Cuenca, Laura Bruno, Jonathan Mutal, Sabrina Girletti, Lise Volkart and Pierrette Bouillon}{Re-design of the Machine Translation Training Tool (MT3)}{}
-\addproject{papers_translator/EAMT_2020_paper_61.pdf}{pt61}{Mateja Arnejšek and Alenka Unk}{Multidimensional assessment of the eTranslation output for English–Slovene}{}
-\addproject{papers_translator/EAMT_2020_paper_65.pdf}{pt65}{Randy Scansani and Lamis Mhedhbi}{How do LSPs compute MT discounts? Presenting a company's pipeline and its use}{}
-\addproject{papers_translator/EAMT_2020_paper_79.pdf}{pt79}{Antoni Oliver, Sergi Alvarez and Toni Badia}{PosEdiOn: Post-Editing Assessment in PythOn}{}
-\addproject{papers_translator/EAMT_2020_paper_91.pdf}{pt91}{Sergi Alvarez, Antoni Oliver and Toni Badia}{Quantitative Analysis of Post-Editing Effort Indicators for NMT}{}
-\addproject{papers_translator/EAMT_2020_paper_100.pdf}{pt100}{Félix Do Carmo}{Comparing Post-editing based on Four Editing Actions against Translating with an Auto-Complete Feature}{}
-\addproject{papers_translator/EAMT_2020_paper_102.pdf}{pt102}{Meghan Dowling, Sheila Castilho, Joss Moorkens, Teresa Lynn and Andy Way}{A human evaluation of English-Irish statistical and neural machine translation}{}
-\addproject{papers_translator/EAMT_2020_paper_129.pdf}{pt129}{Maria Stasimioti, Vilelmini Sosoni, Katia Kermanidis and Despoina Mouratidis}{Machine Translation Quality: A comparative evaluation of SMT, NMT and tailored-NMT outputs}{}
+\addpaper{papers_translator/EAMT_2020_paper_28.pdf}{pt28}{Maja Popovic}{On the differences between human translations}{}
+\addpaper{papers_translator/EAMT_2020_paper_57.pdf}{pt57}{Paula Estrella, Emiliano Cuenca, Laura Bruno, Jonathan Mutal, Sabrina Girletti, Lise Volkart and Pierrette Bouillon}{Re-design of the Machine Translation Training Tool (MT3)}{}
+\addpaper{papers_translator/EAMT_2020_paper_61.pdf}{pt61}{Mateja Arnejšek and Alenka Unk}{Multidimensional assessment of the eTranslation output for English–Slovene}{}
+\addpaper{papers_translator/EAMT_2020_paper_65.pdf}{pt65}{Randy Scansani and Lamis Mhedhbi}{How do LSPs compute MT discounts? Presenting a company's pipeline and its use}{}
+\addpaper{papers_translator/EAMT_2020_paper_79.pdf}{pt79}{Antoni Oliver, Sergi Alvarez and Toni Badia}{PosEdiOn: Post-Editing Assessment in PythOn}{}
+\addpaper{papers_translator/EAMT_2020_paper_91.pdf}{pt91}{Sergi Alvarez, Antoni Oliver and Toni Badia}{Quantitative Analysis of Post-Editing Effort Indicators for NMT}{}
+\addpaper{papers_translator/EAMT_2020_paper_100.pdf}{pt100}{Félix Do Carmo}{Comparing Post-editing based on Four Editing Actions against Translating with an Auto-Complete Feature}{}
+\addpaper{papers_translator/EAMT_2020_paper_102.pdf}{pt102}{Meghan Dowling, Sheila Castilho, Joss Moorkens, Teresa Lynn and Andy Way}{A human evaluation of English-Irish statistical and neural machine translation}{}
+\addpaper{papers_translator/EAMT_2020_paper_129.pdf}{pt129}{Maria Stasimioti, Vilelmini Sosoni, Katia Kermanidis and Despoina Mouratidis}{Machine Translation Quality: A comparative evaluation of SMT, NMT and tailored-NMT outputs}{}
 
 
 \mychapter{Project/product descriptions}
 
-\addproject{papers_prodproj/EAMT_2020_paper_19.pdf}{pp19}{Felipe Soares, Anna Zaretskaya and Diego Bartolome}{QE Viewer: an Open-Source Tool for Visualization of Machine Translation Quality Estimation Results}{}
-\addproject{papers_prodproj/EAMT_2020_paper_26.pdf}{pp26}{Sheila Castilho}{Document-Level Machine Translation Evaluation Project: Methodology, Effort and Inter-Annotator Agreement}{}
-\addproject{papers_prodproj/EAMT_2020_paper_31.pdf}{pp31}{Felix Hieber, Tobias Domhan, Michael Denkowski and David Vilar}{Sockeye 2: A Toolkit for Neural Machine Translation}{}
-\addproject{papers_prodproj/EAMT_2020_paper_32.pdf}{pp32}{Amir Kamran, Dace Dzeguze, Jaap van der Meer, Milica Panic, Alessandro Cattelan, Daniele Patrioli, Luisa Bentivogli and Marco Turchi}{CEF Data Marketplace: Powering a Long-term Supply of Language Data}{}
-\addproject{papers_prodproj/EAMT_2020_paper_33.pdf}{pp33}{Maja Popovic}{QRev: Machine Translation of User Reviews: What Influences the Translation Quality?}{}
-\addproject{papers_prodproj/EAMT_2020_paper_45.pdf}{pp45}{Ondřej Bojar, Dominik Macháček, Sangeet Sagar, Otakar Smrž, Jonáš Kratochvíl, Ebrahim Ansari, Dario Franceschini, Chiara Canton, Ivan Simonini, Thai-Son Nguyen, Felix Schneider, Sebastian Stücker, Alex Waibel, Barry Haddow, Rico Sennrich and Philip Williams}{ELITR: European Live Translator}{}
-\addproject{papers_prodproj/EAMT_2020_paper_63.pdf}{pp63}{Andy Way, Petra Bago, Jane Dunne, Federico Gaspari, Andre Kåsen, Gauti Kristmannsson, Helen McHugh, Jon Arild Olsen, Dana Davis Sheridan, Páraic Sheridan and John Tinsley}{Progress of the PRINCIPLE Project: Promoting MT for Croatian, Icelandic, Irish and Norwegian}{}
-\addproject{papers_prodproj/EAMT_2020_paper_76.pdf}{pp76}{Antoni Oliver}{MTUOC: easy and free integration of NMT systems in professional translation environments}{}
-\addproject{papers_prodproj/EAMT_2020_paper_77.pdf}{pp77}{Celia Rico, María Del Mar Sánchez Ramos and Antoni Oliver}{INMIGRA3: building a case for NGOs and NMT}{}
-\addproject{papers_prodproj/EAMT_2020_paper_81.pdf}{pp81}{Ēriks Ajausks, Victoria Arranz, Laurent Bié, Aleix Cerdà-i-Cucó, Khalid Choukri, Montse Cuadros, Hans Degroote, Amando Estela, Thierry Etchegoyhen, Mercedes García-Martínez, Aitor García-Pablos, Manuel Herranz, Alejandro Kohan, Maite Melero, Mike Rosner, Roberts Rozis, Patrick Paroubek, Artūrs Vasiļevskis and Pierre Zweigenbaum}{The Multilingual Anonymisation Toolkit for Public Administrations (MAPA) Project}{}
-\addproject{papers_prodproj/EAMT_2020_paper_83.pdf}{pp83}{Heidi Depraetere, Joachim Van den Bogaert, Sara Szoc and Tom Vanallemeersch}{APE-QUEST: an MT Quality Gate}{}
-\addproject{papers_prodproj/EAMT_2020_paper_84.pdf}{pp84}{Joachim Van den Bogaert, Tom Vanallemeersch and Heidi Depraetere}{MICE: a middleware layer for MT}{}
-\addproject{papers_prodproj/EAMT_2020_paper_85.pdf}{pp85}{Laurent Bié, Aleix Cerdà-i-Cucó, Hans Degroote, Amando Estela, Mercedes García-Martínez, Manuel Herranz, Alejandro Kohan, Maite Melero, Tony O’dowd, Sinéad O’gorman, Mārcis Pinnis, Roberts Rozis, Riccardo Superbo and Artūrs Vasiļevskis}{Neural Translation for the European Union (NTEU) Project}{}
-\addproject{papers_prodproj/EAMT_2020_paper_86.pdf}{pp86}{Jörg Tiedemann and Santhosh Thottingal}{OPUS-MT -- Building open translation services for the World}{}
-\addproject{papers_prodproj/EAMT_2020_paper_94.pdf}{pp94}{Joachim Van den Bogaert, Arne Defauw, Frederic Everaert, Koen Van Winckel, Alina Kramchaninova, Anna Bardadym, Tom Vanallemeersch, Pavel Smrž and Michal Hradiš}{OCR, Classification \& Machine Translation (OCCAM)}{}
-\addproject{papers_prodproj/EAMT_2020_paper_95.pdf}{pp95}{Joachim Van den Bogaert, Arne Defauw, Sara Szoc, Frederic Everaert, Koen Van Winckel, Alina Kramchaninova, Anna Bardadym and Tom Vanallemeersch}{CEFAT4Cities, a Natural Language Layer for the  ISA2 Core Public Service Vocabulary}{}
-\addproject{papers_prodproj/EAMT_2020_paper_101.pdf}{pp101}{Lieve Macken, Margot Fonteyne, Arda Tezcan and Joke Daems}{Assessing the Comprehensibility of Automatic Translations (ArisToCAT)}{}
-\addproject{papers_prodproj/EAMT_2020_paper_104.pdf}{pp104}{Judith Klein and Giorgio Bernardinello}{Let MT simplify and speed up your Alignment for TM creation}{}
-\addproject{papers_prodproj/EAMT_2020_paper_106.pdf}{pp106}{Reinhard Rapp and George Tambouratzis}{An Overview of the SEBAMAT Project}{}
-\addproject{papers_prodproj/EAMT_2020_paper_108.pdf}{pp108}{Andre Filipe Torres Martins}{DeepSPIN: Deep Structured Prediction for Natural Language Processing}{}
-\addproject{papers_prodproj/EAMT_2020_paper_110.pdf}{pp110}{Andre Filipe Torres Martins, Joao Graca, Paulo Dimas, Helena Moniz and Graham Neubig}{Project MAIA: Multilingual AI Agent Assistant}{}
-\addproject{papers_prodproj/EAMT_2020_paper_126.pdf}{pp126}{Natália Resende and Andy Way}{MTrill project: Machine Translation impact on language learning}{}
+%\addproject{papers_prodproj/EAMT_2020_paper_19.pdf}{pp19}{Felipe Soares, Anna Zaretskaya and Diego Bartolome}{QE Viewer: an Open-Source Tool for Visualization of Machine Translation Quality Estimation Results}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_19.pdf}{pp19}{Felipe Soares, Anna Zaretskaya and Diego Bartolome}{QE Viewer: an Open-Source Tool for Visualization of Machine Translation Quality Estimation Results}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_26.pdf}{pp26}{Sheila Castilho}{Document-Level Machine Translation Evaluation Project: Methodology, Effort and Inter-Annotator Agreement}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_31.pdf}{pp31}{Felix Hieber, Tobias Domhan, Michael Denkowski and David Vilar}{Sockeye 2: A Toolkit for Neural Machine Translation}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_32.pdf}{pp32}{Amir Kamran, Dace Dzeguze, Jaap van der Meer, Milica Panic, Alessandro Cattelan, Daniele Patrioli, Luisa Bentivogli and Marco Turchi}{CEF Data Marketplace: Powering a Long-term Supply of Language Data}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_33.pdf}{pp33}{Maja Popovic}{QRev: Machine Translation of User Reviews: What Influences the Translation Quality?}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_45.pdf}{pp45}{Ondřej Bojar, Dominik Macháček, Sangeet Sagar, Otakar Smrž, Jonáš Kratochvíl, Ebrahim Ansari, Dario Franceschini, Chiara Canton, Ivan Simonini, Thai-Son Nguyen, Felix Schneider, Sebastian Stücker, Alex Waibel, Barry Haddow, Rico Sennrich and Philip Williams}{ELITR: European Live Translator}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_63.pdf}{pp63}{Andy Way, Petra Bago, Jane Dunne, Federico Gaspari, Andre Kåsen, Gauti Kristmannsson, Helen McHugh, Jon Arild Olsen, Dana Davis Sheridan, Páraic Sheridan and John Tinsley}{Progress of the PRINCIPLE Project: Promoting MT for Croatian, Icelandic, Irish and Norwegian}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_76.pdf}{pp76}{Antoni Oliver}{MTUOC: easy and free integration of NMT systems in professional translation environments}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_77.pdf}{pp77}{Celia Rico, María Del Mar Sánchez Ramos and Antoni Oliver}{INMIGRA3: building a case for NGOs and NMT}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_81.pdf}{pp81}{Ēriks Ajausks, Victoria Arranz, Laurent Bié, Aleix Cerdà-i-Cucó, Khalid Choukri, Montse Cuadros, Hans Degroote, Amando Estela, Thierry Etchegoyhen, Mercedes García-Martínez, Aitor García-Pablos, Manuel Herranz, Alejandro Kohan, Maite Melero, Mike Rosner, Roberts Rozis, Patrick Paroubek, Artūrs Vasiļevskis and Pierre Zweigenbaum}{The Multilingual Anonymisation Toolkit for Public Administrations (MAPA) Project}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_83.pdf}{pp83}{Heidi Depraetere, Joachim Van den Bogaert, Sara Szoc and Tom Vanallemeersch}{APE-QUEST: an MT Quality Gate}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_84.pdf}{pp84}{Joachim Van den Bogaert, Tom Vanallemeersch and Heidi Depraetere}{MICE: a middleware layer for MT}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_85.pdf}{pp85}{Laurent Bié, Aleix Cerdà-i-Cucó, Hans Degroote, Amando Estela, Mercedes García-Martínez, Manuel Herranz, Alejandro Kohan, Maite Melero, Tony O’dowd, Sinéad O’gorman, Mārcis Pinnis, Roberts Rozis, Riccardo Superbo and Artūrs Vasiļevskis}{Neural Translation for the European Union (NTEU) Project}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_86.pdf}{pp86}{Jörg Tiedemann and Santhosh Thottingal}{OPUS-MT -- Building open translation services for the World}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_94.pdf}{pp94}{Joachim Van den Bogaert, Arne Defauw, Frederic Everaert, Koen Van Winckel, Alina Kramchaninova, Anna Bardadym, Tom Vanallemeersch, Pavel Smrž and Michal Hradiš}{OCR, Classification \& Machine Translation (OCCAM)}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_95.pdf}{pp95}{Joachim Van den Bogaert, Arne Defauw, Sara Szoc, Frederic Everaert, Koen Van Winckel, Alina Kramchaninova, Anna Bardadym and Tom Vanallemeersch}{CEFAT4Cities, a Natural Language Layer for the  ISA2 Core Public Service Vocabulary}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_101.pdf}{pp101}{Lieve Macken, Margot Fonteyne, Arda Tezcan and Joke Daems}{Assessing the Comprehensibility of Automatic Translations (ArisToCAT)}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_104.pdf}{pp104}{Judith Klein and Giorgio Bernardinello}{Let MT simplify and speed up your Alignment for TM creation}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_106.pdf}{pp106}{Reinhard Rapp and George Tambouratzis}{An Overview of the SEBAMAT Project}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_108.pdf}{pp108}{Andre Filipe Torres Martins}{DeepSPIN: Deep Structured Prediction for Natural Language Processing}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_110.pdf}{pp110}{Andre Filipe Torres Martins, Joao Graca, Paulo Dimas, Helena Moniz and Graham Neubig}{Project MAIA: Multilingual AI Agent Assistant}{}
+\addpaper{papers_prodproj/EAMT_2020_paper_126.pdf}{pp126}{Natália Resende and Andy Way}{MTrill project: Machine Translation impact on language learning}{}
 
 \newpage
 \cfoot{}

@@ -1,6 +1,7 @@
 \documentclass[a4paper,11pt,twoside]{book}
 
 \usepackage[english]{babel}
+\usepackage{setspace}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{pdfpages}
@@ -170,7 +171,10 @@ Mikel L. Forcada
 \thispagestyle{empty}
 \vfill \mbox{} \vfill
 
+\begin{onehalfspacing}
+
 \noindent \includegraphics[scale=0.5]{logos/creative_commons.pdf} 
+\vspace{1em}
 
 \noindent 
 The papers published in this proceedings are ---unless indicated
@@ -187,6 +191,7 @@ for commercial purposes. The full text of the licence may be found at
 \noindent © 2020 The authors\\
 \noindent \textbf{ISBN:} 978-989-33-0589-8\\
 
+\end{onehalfspacing}
 
 \vfill \mbox{}
 
@@ -197,13 +202,15 @@ for commercial purposes. The full text of the licence may be found at
 
 \tableofcontents
 
+\begin{onehalfspacing}
+
 \chapter*{Foreword from the General Chair}
 \addcontentsline{toc}{chapter}{Foreword from the General Chair}
 %\vspace{-0.8cm}
 
+
 \noindent
 \emph{Bem-vindas e bem-vindos!}\\
-\\
 
 As president of the European Association for Machine Translation (EAMT) and General Chair of the 22nd Annual Conference of the EAMT, it's a pleasure for me to write these opening words to the Proceedings of EAMT~2020.
 
@@ -232,7 +239,7 @@ the Executive Committee of the EAMT.
 EAMT 2020 would have never been possible without the generous offer to host and the
 hard work subsequently done by the local organizing committee at Unbabel, but also at the \emph{Instituto Superior Técnico}, the \emph{Instituto de Engenharia de Sistemas e Computadores, Investigação e Desenvolvimento} and the \emph{Instituto Universitário de Lisboa}, particularly André Martins, Helena Moniz, Sara Fumega, Bruno Martins, Fernando Batista, Luisa Coheur, Carla Parra Escartín, and Isabel Trancoso.
 
-It is also with great pleasure that I thank our sponsors Banco Português de Investimento (gold sponsor), STAR Group and Microsoft (silver sponsor), Unbabel, text\&form, TAUS, Pangeanic, and Crosslang (bronze sponsors), and Apertium and Prompsit (supporting sponsors), particularly for the flexibility shown when adapting to the changes in how the conference is run. EAMT 2020 would not be possible without the amazing engagement of these companies. I am also thankful for the ample support received from the local institutions in Lisbon. 
+It is also with great pleasure that I thank our sponsors Banco Português de Investimento (gold sponsor), STAR Group and Microsoft (silver sponsors), Unbabel, text\&form, TAUS, Pangeanic, and Crosslang (bronze sponsors), and Apertium and Prompsit (supporting sponsors), particularly for the flexibility shown when adapting to the changes in how the conference is run. EAMT 2020 would not be possible without the amazing engagement of these companies. I am also thankful for the ample support received from the local institutions in Lisbon. 
 
 Finally, I would like to thank future EAMT 2020 attendees for participating but also for their understanding. I hope
 the conference leads to new friendships ---first virtual, and soon, I hope, face to face--- and all sorts of fruitful collaboration in the field of translation technologies. 
@@ -287,13 +294,10 @@ Finally, we would like to express our sincere appreciation to the people and org
 
 \vspace{1cm}
 \begin{center}
+\setlength{\tabcolsep}{20pt}
 \begin{tabular}{ll}
-André Martins\\
-IST and Unbabel\\
-\\
-\\
-Helena Moniz\\
-INESC-ID and Unbabel\\
+André Martins		&  Helena Moniz\\
+IST and Unbabel	& INESC-ID and Unbabel\\
 \end{tabular}
 \end{center}
 
@@ -312,6 +316,7 @@ We would like to thank everyone who, by offering their flexibility and extra eff
 
 \vspace{1cm}
 \begin{center}
+\setlength{\tabcolsep}{20pt}
 \begin{tabular}{ll}
 Arianna Bisazza 		& Ana Guerberof-Arenas\\
 University of Groningen	& University of Surrey \\
@@ -322,6 +327,8 @@ Dublin City University	& Fondazione Bruno Kessler\\
 \end{tabular}
 
 \end{center}
+
+\end{onehalfspacing}
 
 
 \chapter*{EAMT 2020 Committees}
@@ -538,17 +545,25 @@ Dublin City University	& Fondazione Bruno Kessler\\
 Lucia Specia, Imperial College and Sheffield University, UK
 \vspace{0.5cm}
 
+\begin{onehalfspacing}
+
 Neural machine translation (NMT) has become the de facto automated translation technology for language pairs where enough parallel data is available. Nevertheless, translation models are not bulletproof. Given the generally very fluent translations produced by these models, automatically assessing their general quality is arguably more challenging, yet paramount. In this talk I will argue that the solution to this problem can to a large extent be provided by NMT models themselves. I will discuss experiments demonstrating that such models provide valuable information for both translation evaluation and quality estimation. Namely, they allow for better supervised as well as fully unsupervised quality estimation models, as well as more for reliable multi-reference evaluation approaches.
+
+\end{onehalfspacing}
 
 
 \chapter*{EAMT 2019 Best Thesis Award --- Anthony C Clarke Award}
 \addcontentsline{toc}{chapter}{EAMT 2019 Best Thesis Award --- Anthony C Clarke Award}
+
+\begin{onehalfspacing}
 
 Ten PhD theses defended in 2019 were received as candidates for the 2019 edition of the Anthony C Clarke Award - EAMT Best Thesis Award, and all ten were eligible. 36 reviewers and six EAMT Executive Committee members were recruited to examine and score the theses, considering how challenging the problem tackled in each thesis was, how relevant the results were for machine translation as a field, and what the strength of its impact in terms of scientific publications was. Two EAMT Executive Committee members also analysed all theses.
 
 The year of 2019 was again a very good year for PhD theses in machine translation. The scores of the best theses were very close, which made it very hard to select a winner. A panel of five EAMT Executive Committee members (André Martins, Lucia Specia, Khalil Sima'an, Carolina Scarton, and Mikel L. Forcada) was assembled to process the reviews and select a winner.
 
 The panel has decided to grant the 2019 edition of the EAMT Best Thesis Award, Anthony C Clarke Award, to {\bf Felix Stahlberg} for his thesis “The Roles of Language Models and Hierarchical Models in Neural Sequence-to-Sequence Prediction”, University of Cambridge, supervised by Bill Byrne.
+
+\end{onehalfspacing}
 
 \addpaper{misc/EAMT_Best_Thesis_Abstract.pdf}{btaw}{Felix Stahlberg}{The Roles of Language Models and Hierarchical Models in Neural Sequence-to-Sequence Prediction}{}
 

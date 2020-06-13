@@ -2,23 +2,20 @@
 
 Adding the proceedings and all the corresponding papers to the ACL Anthology.
 The import instructions are here: https://www.aclweb.org/anthology/info/contrib/
-
-## easy2acl
-
-Peer-reviewing was done using EasyChair but proceedings are to be produced with aclpub. 
-So, we adapted the script `easy2acl.py`, available at https://github.com/acl-org/easy2acl
+Peer-reviewing was done using EasyChair, but proceedings are to be produced with ACLPUB.  
+So, we have adapted the script `easy2acl.py` available at https://github.com/acl-org/easy2acl to our needs.
 
 The user must retrieve information from EasyChair before running the script.
 
-## How to run
+## Information required
 
-Create the files `info/meta.txt`, `info/accepted.tsv`, `info/abstracts.html` (optional), and the folder `pdf` as shown.
+Create the files `info/meta.txt`, `info/papers.tsv`, `info/abstracts.html` (optional), and the folder `pdf` as shown.
 More details can be found below in [Getting data from EasyChair](https://github.com/acl-org/easy2acl/#getting-data-from-easychair).
 Before running `easy2acl.py`, your file structure should look like this:
 
     |-- info/meta.txt       # conference metadata
     |-- info/abstracts.html # (optional) to include abstracts
-    |-- info/accepted.tsv   # copied list of accepted papers
+    |-- info/papers.tsv     # list of accepted papers
     `-- pdf
         |-- ${abbrev}_${year}.pdf              # full volume of consolidated PDFs
         |-- ${abbrev}_${year}_frontmatter.pdf  # front matter of proceedings
@@ -27,6 +24,39 @@ Before running `easy2acl.py`, your file structure should look like this:
         `-- ...
 
 (where ${abbrev} and ${year} are defined in the `info/meta.txt` file, see below)
+
+### info/papers.tsv
+
+Tab-separated file, containg 3 or 4 columns: `paper id`, `authors`, `title`, `initial page` (optional)
+
+Example:
+
+    # EAMT 2019 Best Thesis Award --- Anthony C Clarke Award			
+    901 John Smith	Nice title	5
+
+    # Research		
+    21	John Smith, Peter Nice and Anna Cool	Super-nice Title 	9
+    29	Tom Cool and Peter Smith	Really nice title	19
+    34	Hao Wang, Wang Lee, Xi Yung and Lu Deng	Super-nice title    27
+    ...
+ 
+### info/abstracts.html (optional)
+
+It can be produced, based on the EasyChair information menu `Administration -> Other Utilities -> List of Accepted Submissions`, and then selecting `Show abstracts`. The generated HTML is well-formated and contains the information bellow.
+
+Example:
+
+    <div class="paper">
+    <span class="authors"> ... </span>
+    <span class="title">...</span></div>
+    <div class="abstract">....</div>
+    <div class="paper">
+    <span class="authors"> ... </span>
+    <span class="title">...</span></div>
+    <div class="abstract">....</div>
+    ...
+    
+## running `easy2acl.py`
 
 When you run the script for the first time, create a dummy pdf file for the full volume consolidated PDF file and the front matter proceedings file using the above file naming convention.
 We will replace the dummy files later and repeat the procedure.

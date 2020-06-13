@@ -28,6 +28,7 @@ Before running `easy2acl.py`, your file structure should look like this:
 ### info/papers.tsv
 
 Tab-separated file, containing 3 or 4 columns: `paper id`, `authors`, `title`, `initial page` (optional)
+It accepts comments and empty lines, as shown in the example.
 
 Example:
 
@@ -37,7 +38,7 @@ Example:
     # Research		
     21	John Smith, Peter Nice and Anna Cool	Super-nice Title 	9
     29	Tom Cool and Peter Smith	Really nice title	19
-    34	Hao Wang, Wang Lee, Xi Yung and Lu Deng	Super-nice title    27
+    34	Hao Wang, Wang Lee, Xi Yung and Lu Yu	Super cool title    27
     ...
  
 ### info/abstracts.html (optional)

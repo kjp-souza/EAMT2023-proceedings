@@ -1,0 +1,4 @@
+unicode_tex
+pybtex
+PyPDF2
+

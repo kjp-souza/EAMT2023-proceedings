@@ -1,0 +1,26 @@
+abbrev eamt
+volume_name 1
+type Main Conference
+title The 22nd Annual Conference of the European Association for Machine Translation
+booktitle Proceedings of the 22nd Annual Conference of the European Association for Machine Translation
+short_booktitle Proceedings of EAMT 2020
+url https://eamt2020.inesc-id.pt
+month November
+year 2020
+location Lisboa, Portugal
+publisher European Association for Machine Translation
+chairs Mikel L. Forcada
+chairs André Martins
+chairs Helena Moniz
+chairs Marco Turchi
+chairs Arianna Bisazza
+chairs Joss Moorkens
+chairs Ana Guerberof
+chairs Mary Nurminen
+chairs Lena Marg
+chairs Sara Fumega
+chairs Bruno Martins
+chairs Fernando Batista
+chairs Luisa Coheur
+chairs Carla Parra
+chairs Isabel Trancoso

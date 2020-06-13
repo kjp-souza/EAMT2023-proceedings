@@ -1,0 +1,87 @@
+# EAMT 2019 Best Thesis Award --- Anthony C Clarke Award			
+901	Felix Stahlberg	The Roles of Language Models and Hierarchical Models in Neural Sequence-to-Sequence Prediction	5
+
+
+# Research			
+21	Alessandra Rossetti, Sharon O'Brien and Patrick Cadwell	Comprehension and Trust in Crises: Investigating the Impact of Machine Translation and Post-Editing	9
+29	Tom Kocmi and Ondřej Bojar	Efficiently Reusing Old Models Across Languages via Transfer Learning	19
+34	Hao Yang, Minghan Wang, Ning Xie, Ying Qin and Yao Deng	Efficient Transfer Learning for Quality Estimation with Bottleneck Adapter Layer	29
+36	Yunsu Kim, Miguel Graça and Hermann Ney	When and Why is Unsupervised Neural Machine Translation Useless?	35
+43	Maciej Modrzejewski, Miriam Exel, Bianka Buschbeck, Thanh-Le Ha and Alexander Waibel	Incorporating External Annotation to improve Named Entity Translation in NMT	45
+46	Minghan Wang, Hao Yang, Ying Qin, Shiliang Sun and Yao Deng	Unified Humor Detection Based on Sentence-pair Augmentation and Transfer Learning	53
+49	Víctor M. Sánchez-Cartagena, Mikel L. Forcada and Felipe Sánchez-Martínez	A multi-source approach for Breton–French hybrid machine translation	61
+50	Allen Antony, Arghya Bhattacharya, Jaipal Goud and Radhika Mamidi	Leveraging Multilingual Resources for Language Invariant Sentiment Analysis	71
+66	Lukas Edman, Antonio Toral and Gertjan van Noord	Low-Resource Unsupervised NMT: Diagnosing the Problem and Providing a Linguistically Motivated Solution	81
+70	Jihyung Moon, Hyunchang Cho and Eunjeong L. Park	Revisiting Round-trip Translation for Quality Estimation	91
+72	Yuting Zhao, Mamoru Komachi, Tomoyuki Kajiwara and Chenhui Chu	Double Attention-based Multimodal Neural Machine Translation with Semantic Image Regions	105
+73	Maarit Koponen, Umut Sulubacak, Kaisa Vitikainen and Jörg Tiedemann	MT for subtitling: User evaluation of post-editing productivity	115
+88	Yuying Ye and Antonio Toral	Fine-grained Human Evaluation of Transformer and Recurrent Approaches to Neural Machine Translation for English-to-Chinese	125
+89	Julia Kreutzer, Nathaniel Berger and Stefan Riezler	Correct Me If You Can: Learning from Error Corrections and Markings	135
+92	Frederic Blain, Nikolaos Aletras and Lucia Specia	Quality In, Quality Out: Learning from Actual Mistakes	145
+97	Takeshi Hayakawa and Yuki Arase	Fine-Grained Error Analysis on English-to-Japanese Machine Translation in the Medical Domain	155
+107	Nora Aranberri	With or without you? Effects of using machine translation to write flash fiction in the foreign language	165
+109	Tharindu Ranasinghe, Constantin Orasan and Ruslan Mitkov	Intelligent Translation Memory Matching and Retrieval with Sentence Encoders	175
+111	Antonio Toral	Reassessing Claims of Human Parity and Super-Human Performance in Machine Translation at WMT 2019	185
+115	Kamal Kumar Gupta, Rejwanul Haque, Asif Ekbal, Pushpak Bhattacharyya and Andy Way	Modelling Source- and Target- Language Syntactic Information as Conditional Context in Interactive Neural Machine Translation	195
+118	António Góis, Kyunghyun Cho and André Martins	Learning Non-Monotonic Automatic Post-Editing of Translations from Human Orderings	205
+120	Lukas Fischer and Samuel Läubli	What's the Difference Between Professional Human and Machine Translation? A Blind Multi-language Study on Domain-specific MT	215
+122	António Lopes, M. Amin Farajian, Rachel Bawden, Michael Zhang and André T. Martins	Document-level Neural MT: A Systematic Comparison	225
+123	Amirhossein Tebbifakhr, Matteo Negri and Marco Turchi	Automatic Translation for Multiple NLP tasks: a Multi-task Approach to Machine-oriented NMT Adaptation	235
+125	Natália Resende, Benjamin Cowan and Andy Way	MT syntactic priming effects on L2 English speakers	245
+			
+			
+			
+			
+# Users			
+20	Sahil Manchanda and Galina Grunin	Domain Informed Neural Machine Translation: Developing Translation Services for Healthcare Enterprise	255
+38	Karolina Stefaniak	Evaluating the usefulness of neural machine translation for the Polish translators in the European Commission	263
+44	Miriam Exel, Bianka Buschbeck, Lauritz Brandt and Simona Doneva	Terminology-Constrained Neural Machine Translation at SAP	271
+47	Jonathan Mutal, Johanna Gerlach, Pierrette Bouillon and Hervé Spechbach	Ellipsis Translation for a Medical Speech to Speech Translation System	281
+48	Gema Ramírez-Sánchez, Jaume Zaragoza-Bernabeu, Marta Bañón and Sergio Ortiz Rojas	Bifixer and Bicleaner: two open-source tools to clean your parallel data	291
+54	Felipe Sánchez-Martínez, Víctor M. Sánchez-Cartagena, Juan Antonio Pérez-Ortiz, Mikel L. Forcada, Miquel Esplà-Gomis, Andrew Secker, Susie Coleman and Julie Wall	An English-Swahili parallel corpus and its use for neural machine translation in the news domain	299
+55	Mara Nunziatini and Lena Marg	Machine Translation Post-Editing Levels: Breaking Away from the Tradition and Delivering a Tailored Service	309
+99	Miguel Domingo, Mercedes García-Martínez, Álvaro Peris, Alexandre Helle, Amando Estela, Laurent Bié, Francisco Casacuberta and Manuel Herranz	A User Study of the Incremental Learning in NMT	319
+105	Daniel Marín Buj, Daniel Ibáñez García, Zuzanna Parcheta and Francisco Casacuberta Nolla	NICE: Neural Integrated Custom Engines	329
+117	Anna Zaretskaya, José Conceição and Frederick Bane	Estimation vs Metrics: is QE Useful for MT Model Selection?	339
+127	María Concepción Laguardia	Persistent MT on software technical documentation - a case study	347
+128	Georg Kirchner	Insights from Gathering MT Productivity Metrics at Scale	353
+			
+			
+			
+# Translators			
+28	Maja Popovic	On the differences between human translations	365
+57	Paula Estrella, Emiliano Cuenca, Laura Bruno, Jonathan Mutal, Sabrina Girletti, Lise Volkart and Pierrette Bouillon	Re-design of the Machine Translation Training Tool (MT3)	375
+61	Mateja Arnejšek and Alenka Unk	Multidimensional assessment of the eTranslation output for English–Slovene	383
+65	Randy Scansani and Lamis Mhedhbi	How do LSPs compute MT discounts? Presenting a company's pipeline and its use	393
+79	Antoni Oliver, Sergi Alvarez and Toni Badia	PosEdiOn: Post-Editing Assessment in PythOn	403
+91	Sergi Alvarez, Antoni Oliver and Toni Badia	Quantitative Analysis of Post-Editing Effort Indicators for NMT	411
+100	Félix Do Carmo	Comparing Post-editing based on Four Editing Actions against Translating with an Auto-Complete Feature	421
+102	Meghan Dowling, Sheila Castilho, Joss Moorkens, Teresa Lynn and Andy Way	A human evaluation of English-Irish statistical and neural machine translation	431
+129	Maria Stasimioti, Vilelmini Sosoni, Katia Kermanidis and Despoina Mouratidis	Machine Translation Quality: A comparative evaluation of SMT, NMT and tailored-NMT outputs	441
+			
+			
+			
+			
+# Product-Project			
+19	Felipe Soares, Anna Zaretskaya and Diego Bartolome	QE Viewer: an Open-Source Tool for Visualization of Machine Translation Quality Estimation Results	453
+26	Sheila Castilho	Document-Level Machine Translation Evaluation Project: Methodology, Effort and Inter-Annotator Agreement	455
+31	Felix Hieber, Tobias Domhan, Michael Denkowski and David Vilar	Sockeye 2: A Toolkit for Neural Machine Translation	457
+32	Amir Kamran, Dace Dzeguze, Jaap van der Meer, Milica Panic, Alessandro Cattelan, Daniele Patrioli, Luisa Bentivogli and Marco Turchi	CEF Data Marketplace: Powering a Long-term Supply of Language Data	459
+33	Maja Popovic	QRev: Machine Translation of User Reviews: What Influences the Translation Quality?	461
+45	Ondřej Bojar, Dominik Macháček, Sangeet Sagar, Otakar Smrž, Jonáš Kratochvíl, Ebrahim Ansari, Dario Franceschini, Chiara Canton, Ivan Simonini, Thai-Son Nguyen, Felix Schneider, Sebastian Stücker, Alex Waibel, Barry Haddow, Rico Sennrich and Philip Williams	ELITR: European Live Translator	463
+63	Andy Way, Petra Bago, Jane Dunne, Federico Gaspari, Andre Kåsen, Gauti Kristmannsson, Helen McHugh, Jon Arild Olsen, Dana Davis Sheridan, Páraic Sheridan and John Tinsley	Progress of the PRINCIPLE Project: Promoting MT for Croatian, Icelandic, Irish and Norwegian	465
+76	Antoni Oliver	MTUOC: easy and free integration of NMT systems in professional translation environments	467
+77	Celia Rico, María Del Mar Sánchez Ramos and Antoni Oliver	INMIGRA3: building a case for NGOs and NMT	469
+81	Ēriks Ajausks, Victoria Arranz, Laurent Bié, Aleix Cerdà-i-Cucó, Khalid Choukri, Montse Cuadros, Hans Degroote, Amando Estela, Thierry Etchegoyhen, Mercedes García-Martínez, Aitor García-Pablos, Manuel Herranz, Alejandro Kohan, Maite Melero, Mike Rosner, Roberts Rozis, Patrick Paroubek, Artūrs Vasiļevskis and Pierre Zweigenbaum	The Multilingual Anonymisation Toolkit for Public Administrations (MAPA) Project	471
+83	Heidi Depraetere, Joachim Van den Bogaert, Sara Szoc and Tom Vanallemeersch	APE-QUEST: an MT Quality Gate	473
+84	Joachim Van den Bogaert, Tom Vanallemeersch and Heidi Depraetere	MICE: a middleware layer for MT	475
+85	Laurent Bié, Aleix Cerdà-i-Cucó, Hans Degroote, Amando Estela, Mercedes García-Martínez, Manuel Herranz, Alejandro Kohan, Maite Melero, Tony O’dowd, Sinéad O’gorman, Mārcis Pinnis, Roberts Rozis, Riccardo Superbo and Artūrs Vasiļevskis	Neural Translation for the European Union (NTEU) Project	477
+86	Jörg Tiedemann and Santhosh Thottingal	OPUS-MT -- Building open translation services for the World	479
+94	Joachim Van den Bogaert, Arne Defauw, Frederic Everaert, Koen Van Winckel, Alina Kramchaninova, Anna Bardadym, Tom Vanallemeersch, Pavel Smrž and Michal Hradiš	OCR, Classification \& Machine Translation (OCCAM)	481
+95	Joachim Van den Bogaert, Arne Defauw, Sara Szoc, Frederic Everaert, Koen Van Winckel, Alina Kramchaninova, Anna Bardadym and Tom Vanallemeersch	CEFAT4Cities, a Natural Language Layer for the  ISA2 Core Public Service Vocabulary	483
+101	Lieve Macken, Margot Fonteyne, Arda Tezcan and Joke Daems	Assessing the Comprehensibility of Automatic Translations (ArisToCAT)	485
+104	Judith Klein and Giorgio Bernardinello	Let MT simplify and speed up your Alignment for TM creation	487
+106	Reinhard Rapp and George Tambouratzis	An Overview of the SEBAMAT Project	491
+108	Andre Filipe Torres Martins	DeepSPIN: Deep Structured Prediction for Natural Language Processing	493
+110	Andre Filipe Torres Martins, Joao Graca, Paulo Dimas, Helena Moniz and Graham Neubig	Project MAIA: Multilingual AI Agent Assistant	495
+126	Natália Resende and Andy Way	MTrill project: Machine Translation impact on language learning	497

@@ -27,7 +27,7 @@ Before running `easy2acl.py`, your file structure should look like this:
 
 ### info/papers.tsv
 
-Tab-separated file, containg 3 or 4 columns: `paper id`, `authors`, `title`, `initial page` (optional)
+Tab-separated file, containing 3 or 4 columns: `paper id`, `authors`, `title`, `initial page` (optional)
 
 Example:
 

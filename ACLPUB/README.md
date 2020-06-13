@@ -41,6 +41,11 @@ Example:
     34	Hao Wang, Wang Lee, Xi Yung and Lu Yu	Super cool title    27
     ...
  
+If you produced your proceedings with LaTeX, it generates a temporary file containing the initial page of each section. The page numbers can be pseudo-autoimatically generated based on this file, as follows:
+
+    cat proceedings.toc| grep "\\contentsline {section}" | awk -F'}{' '{print $3, "%", $2}' > pages.txt
+ 
+ 
 ### info/abstracts.html (optional)
 
 It can be produced, based on the EasyChair information menu `Administration -> Other Utilities -> List of Accepted Submissions`, and then selecting `Show abstracts`. The generated HTML is well-formated and contains the information bellow.

@@ -1,26 +1,24 @@
 # ACLPUB
 
 Adding the proceedings and all the corresponding papers to the ACL Anthology.
-
-The import instructions are here:	https://www.aclweb.org/anthology/info/contrib/
-
-Our venue code / abbreviation is "eamt".
+The import instructions are here: https://www.aclweb.org/anthology/info/contrib/
 
 ## easy2acl
 
-Peer-reviewing was done using EasyChair but proceedings are to be produced with aclpub. So, we are using an adapted version of the script `easy2acl.py`, available at https://github.com/acl-org/easy2acl
+Peer-reviewing was done using EasyChair but proceedings are to be produced with aclpub. 
+So, we adapted the script `easy2acl.py`, available at https://github.com/acl-org/easy2acl
 
 The user must retrieve information from EasyChair before running the script.
 
 ## How to run
 
-Create the files `meta.txt`, `accepted.tsv`, and the folder `pdf` as shown.
+Create the files `info/meta.txt`, `info/accepted.tsv`, `info/abstracts.html` (optional), and the folder `pdf` as shown.
 More details can be found below in [Getting data from EasyChair](https://github.com/acl-org/easy2acl/#getting-data-from-easychair).
 Before running `easy2acl.py`, your file structure should look like this:
 
-    |-- meta                # conference metadata
-    |-- abstracts.html      # (optional) to include abstracts
-    |-- accepted.tsv        # copied list of accepted papers
+    |-- info/meta.txt       # conference metadata
+    |-- info/abstracts.html # (optional) to include abstracts
+    |-- info/accepted.tsv   # copied list of accepted papers
     `-- pdf
         |-- ${abbrev}_${year}.pdf              # full volume of consolidated PDFs
         |-- ${abbrev}_${year}_frontmatter.pdf  # front matter of proceedings
@@ -28,7 +26,7 @@ Before running `easy2acl.py`, your file structure should look like this:
         |-- ${abbrev}_${year}_paper_2.pdf
         `-- ...
 
-(where ${abbrev} and ${year} are defined in the `meta.txt` file, see below)
+(where ${abbrev} and ${year} are defined in the `info/meta.txt` file, see below)
 
 When you run the script for the first time, create a dummy pdf file for the full volume consolidated PDF file and the front matter proceedings file using the above file naming convention.
 We will replace the dummy files later and repeat the procedure.

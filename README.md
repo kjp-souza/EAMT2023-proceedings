@@ -1,5 +1,7 @@
 # Proceedings of the EAMT 2020 
-22nd Annual Conference of the European Association for Machine Translation
+[EAMT 2020](https://eamt2020.inesc-id.pt/) - 22nd Annual Conference of the European Association for Machine Translation
+
+
 
 ## Information required
 

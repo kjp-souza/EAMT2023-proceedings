@@ -1,16 +1,13 @@
 # ACLPUB
 
-Adding the proceedings and all the corresponding papers to the ACL Anthology.
-The import instructions are here: https://www.aclweb.org/anthology/info/contrib/
-Peer-reviewing was done using EasyChair, but proceedings are to be produced with ACLPUB.  
-So, we have adapted the script `easy2acl.py` available at https://github.com/acl-org/easy2acl to our needs.
+This directory contains the procedure to add the proceedings and all the corresponding papers to the ACL Anthology, following the instructions available at https://www.aclweb.org/anthology/info/contrib/
 
-The user must retrieve information from EasyChair before running the script.
+Peer-reviewing was done using EasyChair. So, the script `easy2acl.py` available at https://github.com/acl-org/easy2acl was adapted to our needs.
 
 ## Information required
 
-Create the files `info/meta.txt`, `info/papers.tsv`, `info/abstracts.html` (optional), and the folder `pdf` as shown.
-More details can be found below in [Getting data from EasyChair](https://github.com/acl-org/easy2acl/#getting-data-from-easychair).
+Create the files `info/meta.txt`, `info/papers.tsv`, `info/abstracts.html` (optional), and the folder `pdf` as shown. 
+
 Before running `easy2acl.py`, your file structure should look like this:
 
     |-- info/meta.txt       # conference metadata
@@ -24,6 +21,8 @@ Before running `easy2acl.py`, your file structure should look like this:
         `-- ...
 
 (where ${abbrev} and ${year} are defined in the `info/meta.txt` file, see below)
+
+All the required information can be retrived from EasyChair or easily provided by you. More details can be found in [Getting data from EasyChair](https://github.com/acl-org/easy2acl/#getting-data-from-easychair).
 
 ### info/papers.tsv
 

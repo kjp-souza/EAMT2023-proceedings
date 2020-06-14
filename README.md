@@ -17,8 +17,6 @@ Current TEX file assumes that papers are available in PDF format, and that the f
 
 The proceedings and all the corresponding papers are also available into the ACL Anthology. 
 
-Peer-reviewing was done using EasyChair, so proceedings were adapted to the ACLPUB format following the import instructions avaliable [here](https://www.aclweb.org/anthology/info/contrib/).
-
-The `ACLPUB` directory contains the followed procedure. 
+Peer-reviewing was done using EasyChair, so proceedings were adapted to the ACLPUB format following the import instructions avaliable [here](https://www.aclweb.org/anthology/info/contrib/). The `ACLPUB` directory contains the followed procedure. 
 
 The script `easy2acl.py`, available at https://github.com/acl-org/easy2acl, was adapted to our needs.

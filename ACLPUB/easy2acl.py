@@ -23,7 +23,7 @@ from glob import glob
 from shutil import copy
 from unicode_tex import unicode_to_tex
 from pybtex.database import BibliographyData, Entry
-from PyPDF2 import PdfFileReader
+from PyPDF2 import PdfReader
 
 def texify(string):
     """Return a modified version of the argument string where non-ASCII symbols have
@@ -196,8 +196,8 @@ if __name__ == '__main__':
         # Add page range if not frontmatter
         if paper_id > 0:
             with open(pdf_path, 'rb') as in_:
-                file = PdfFileReader(in_)
-                last_page = start_page + file.getNumPages() - 1
+                file = PdfReader(in_)
+                last_page = start_page + len(file.pages) - 1
                 bib_entry.fields['pages'] = '{}--{}'.format(start_page, last_page)
                 start_page = last_page + 1
 

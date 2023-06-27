@@ -1,26 +1,27 @@
 abbrev eamt
 volume_name 1
 type Main Conference
-title The 22nd Annual Conference of the European Association for Machine Translation
-booktitle Proceedings of the 22nd Annual Conference of the European Association for Machine Translation
-short_booktitle Proceedings of EAMT 2020
-url https://eamt2020.inesc-id.pt
-month November
-year 2020
-location Lisboa, Portugal
+title The 24th Annual Conference of the European Association for Machine Translation
+booktitle Proceedings of the 24th Annual Conference of the European Association for Machine Translation
+short_booktitle Proceedings of EAMT 2023
+url https://events.tuni.fi/eamt23/
+month June
+year 2023
+location Tampere, Finland
 publisher European Association for Machine Translation
-chairs Mikel L. Forcada
-chairs André Martins
-chairs Helena Moniz
-chairs Marco Turchi
-chairs Arianna Bisazza
-chairs Joss Moorkens
-chairs Ana Guerberof
 chairs Mary Nurminen
-chairs Lena Marg
-chairs Sara Fumega
-chairs Bruno Martins
-chairs Fernando Batista
-chairs Luisa Coheur
-chairs Carla Parra
-chairs Isabel Trancoso
+chairs Judith Brenner
+chairs Maarit Koponen
+chairs Sirkku Latomaa 
+chairs Mikhail Mikhailov
+chairs Frederike Schierl
+chairs Tharindu Ranasinghe
+chairs Eva Vanmassenhove
+chairs Sergi Alvarez Vidal
+chairs Nora Aranberri
+chairs Mara Nunziatini
+chairs Carla Parra Escartín
+chairs Mikel Forcada
+chairs Maja Popovic
+chairs Carolina Scarton
+chairs Helena Moniz

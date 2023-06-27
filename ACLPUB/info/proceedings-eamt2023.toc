@@ -1,0 +1,73 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Foreword from the General Chair}{v}{chapter*.1}%
+\contentsline {chapter}{Message from the Organising Committee Chair}{viii}{chapter*.2}%
+\contentsline {chapter}{Preface by the Programme Chairs}{x}{chapter*.3}%
+\contentsline {chapter}{EAMT 2023 Organising Committees}{xiv}{chapter*.4}%
+\contentsline {chapter}{Keynote Addresses}{1}{chapter*.19}%
+\contentsline {chapter}{EAMT 2023 Best Thesis Award --- Anthony C Clarke Award}{3}{chapter*.22}%
+\contentsline {section}{Biao Zhang. \emph {Towards Efficient Universal Neural Machine Translation}}{4}{section*.23}%
+\contentsline {chapter}{Research: Technical}{6}{section*.24}%
+\contentsline {section}{Javad Pourmostafa Roshan Sharami, Dimitar Shterionov, Frédéric Blain, Eva. \emph {Tailoring Domain Adaptation for Machine Translation Quality Estimation}}{7}{section*.25}%
+\contentsline {section}{Elise Bertin-Lemée, Annelies Braffort, Camille Challant, Claire Danet and Michael Filhol. \emph {Example-Based Machine Translation from Textto a Hierarchical Representation of Sign Language}}{19}{section*.26}%
+\contentsline {section}{Mikko Aulamo, Ona de Gibert, Sami Virpioja and Jörg Tiedemann. \emph {Unsupervised Feature Selection for Effective Parallel Corpus Filtering}}{29}{section*.27}%
+\contentsline {section}{Antoni Oliver González and Sergi Álvarez. \emph {Filtering and rescoring the CCMatrix corpus for Neural Machine Translation training}}{37}{section*.28}%
+\contentsline {section}{Taisiya Glushkova, Chrysoula Zerva and André F. T. Martins. \emph {BLEU Meets COMET: Combining Lexical and Neural Metrics Towards Robust Machine Translation Evaluation}}{44}{section*.29}%
+\contentsline {section}{Aarón Galiano-Jiménez, Felipe Sánchez-Martínez, Víctor M. Sánchez-Cartagena and Juan Antonio Pérez-Ortiz. \emph {Exploiting large pre-trained models for low-resource neural machine translation}}{56}{section*.30}%
+\contentsline {section}{Nathaniel Berger, Miriam Exel, Matthias Huck and Stefan Riezler. \emph {Enhancing Supervised Learning with Contrastive Markings in Neural Machine Translation Training}}{66}{section*.31}%
+\contentsline {section}{Francesco Fernicola, Silvia Bernardini, Federico Garcea, Adriano Ferraresi and Alberto Barrón-Cedeño. \emph {Return to the Source: Assessing Machine Translation Suitability}}{76}{section*.32}%
+\contentsline {section}{Jianfei He, Shichao Sun, Xiaohua Jia and Wenjie Li. \emph {Empirical Analysis of Beam Search Curse and Search Errors with Model Errors in Neural Machine Translation}}{87}{section*.33}%
+\contentsline {section}{Varun Gumma, Raj Dabre and Pratyush Kumar. \emph {An Empirical Study of Leveraging Knowledge Distillation for Compressing Multilingual Neural Machine Translation Models}}{98}{section*.34}%
+\contentsline {section}{Pedro Henrique Martins, João Alves, Tânia Vaz, Madalena Gonçalves, Beatriz Silva, Marianna Buchicchio, José G. C. de Souza and André F. T. Martins. \emph {Empirical Assessment of kNN-MT for Real-World Translation Scenarios}}{110}{section*.35}%
+\contentsline {section}{Shenbin Qian, Constantin Orasan, Felix Do Carmo, Qiuliang Li and Diptesh Kanojia. \emph {Evaluation of Chinese-English Machine Translation of Emotion-Loaded Microblog Texts: A Human Annotated Dataset for the Quality Assessment of Emotion Translation}}{120}{section*.36}%
+\contentsline {section}{Benoist Wolleb, Romain Silvestri, Georgios Vernikos, Ljiljana Dolamic and Andrei Popescu-Belis. \emph {Assessing the Importance of Frequency versus Compositionality for Subword-based Tokenization in NMT}}{131}{section*.37}%
+\contentsline {section}{Harritxu Gete, Thierry Etchegoyhen and Gorka Labaka. \emph {What Works When in Context-aware Neural Machine Translation?}}{141}{section*.38}%
+\contentsline {section}{Rachel Bawden and François Yvon. \emph {Investigating the Translation Performance of a Large Multilingual Language Model: the Case of BLOOM}}{151}{section*.39}%
+\contentsline {section}{Flavia De Camillis, Egon W. Stemle, Elena Chiocchetti and Francesco Fernicola. \emph {The MT@BZ corpus: machine translation \& legal language}}{165}{section*.40}%
+\contentsline {section}{Sonal Sannigrahi and Rachel Bawden. \emph {Investigating Lexical Sharing in Multilingual Machine Translation for Indian Languages}}{175}{section*.41}%
+\contentsline {section}{Tom Kocmi and Christian Federmann. \emph {Large Language Models Are State-of-the-Art Evaluators of Translation Quality}}{187}{section*.42}%
+\contentsline {section}{Ali Vardasbi, Telmo Pessoa Pires, Robin Schmidt and Stephan Peitz. \emph {State Spaces Aren't Enough: Machine Translation Needs Attention}}{198}{section*.43}%
+\contentsline {section}{Malina Chichirau, Rik van Noord and Antonio Toral. \emph {Automatic Discrimination of Human and Neural Machine Translation in Multilingual Scenarios}}{210}{section*.44}%
+\contentsline {section}{Yasmin Moslem, Rejwanul Haque, John D. Kelleher and Andy Way. \emph {Adaptive Machine Translation with Large Language Models}}{220}{section*.45}%
+\contentsline {section}{Angel Navarro, Miguel Domingo and Francisco Casacuberta. \emph {Segment-based Interactive Machine Translation at a Character Level}}{231}{section*.46}%
+\contentsline {chapter}{Research: Translators and users}{241}{section*.47}%
+\contentsline {section}{Manuel Lardelli and Dagmar Gromann. \emph {Gender-Fair Post-Editing: A Case Study Beyond the Binary}}{242}{section*.48}%
+\contentsline {section}{Miguel A. Jimenez-Crespo. \emph {“Translationese” (and “post-editese”?) no more: on importing fuzzy conceptual tools from Translation Studies in MT research}}{252}{section*.49}%
+\contentsline {section}{María Do Campo Bayón and Pilar Sánchez-Gijón. \emph {A social media NMT engine for a low-resource language combination}}{260}{section*.50}%
+\contentsline {section}{Hadeel Saadany, Constantin Orasan, Rocio Caro Quintana, Felix Do Carmo and Leonardo Zilio. \emph {Analysing Mistranslation of Emotions in \textbackslash \textbackslash Multilingual Tweets by Online MT Tools}}{266}{section*.51}%
+\contentsline {section}{Janiça Hackenbuchner and Ralph Krüger. \emph {DataLitMT – Teaching Data Literacy in the Context of Machine Translation Literacy}}{276}{section*.52}%
+\contentsline {section}{Salmi Leena, Aletta G. Dorst, Maarit Koponen and Katinka Zeven. \emph {Do Humans Translate like Machines? Students’ Conceptualisations of Human and Machine Translation}}{285}{section*.53}%
+\contentsline {section}{Lieve Macken, Bram Vanroy and Arda Tezcan. \emph {Adapting Machine Translation Education to the Neural Era: A Case Study of MT Quality Assessment}}{295}{section*.54}%
+\contentsline {section}{Sergi Alvarez and Antoni Oliver. \emph {PE effort and neural-based automatic MT metrics: do they correlate?}}{305}{section*.55}%
+\contentsline {section}{Susana Valdez, Ana Guerberof Arenas and Kars Ligtenberg. \emph {Migrant communities living in the Netherlands and their use of MT in healthcare settings}}{314}{section*.56}%
+\contentsline {section}{Vicent Briva-Iglesias and Sharon O'Brien. \emph {Measuring Machine Translation User Experience (MTUX): A Comparison between AttrakDiff and User Experience Questionnaire}}{324}{section*.57}%
+\contentsline {section}{Fred Bane, Anna Zaretskaya, Tània Blanch Miró, Celia Soler Uguet and João Torres. \emph {Coming to Terms with Glossary Enforcement: A Study of Three Approaches to Enforcing Terminology in NMT}}{334}{section*.58}%
+\contentsline {section}{Miguel Angel Rios Gaona, Raluca-Maria Chereji, Alina Secara and Dragos Ciobanu. \emph {Quality Analysis of Multilingual Neural Machine Translation Systems and Reference Test Translations for the English-Romanian language pair in the Medical Domain}}{343}{section*.59}%
+\contentsline {section}{Maja Popovic, Ekaterina Lapshinova-Koltunski and Maarit Koponen. \emph {Computational analysis of different translations: by professionals, students and machines}}{353}{section*.60}%
+\contentsline {section}{Bettina Hiebl and Dagmar Gromann. \emph {Quality in Human and Machine Translation: An Interdisciplinary Survey}}{363}{section*.61}%
+\contentsline {section}{Fadi Al-Ghawanmeh, Alexander Jensenius and Kamel Smaili. \emph {How can machine translation help generate Arab melodic improvisation?}}{373}{section*.62}%
+\contentsline {section}{Sheila Castilho, Clodagh Quinn Mallon, Rahel Meister and Shengya Yue. \emph {Do online Machine Translation Systems Care for Context? What About a GPT Model?}}{381}{section*.63}%
+\contentsline {chapter}{Implementations and case studies}{406}{section*.64}%
+\contentsline {section}{Zeynep Yirmibeşoğlu, Olgun Dursun, Harun Dallı, Mehmet Şahin, Ena Hodzik, Sabri Gürses and Tunga Güngör. \emph {Incorporating Human Translator Style into English-Turkish Literary Machine Translation}}{407}{section*.65}%
+\contentsline {section}{Konstantinos Chatzitheodorou, M.ª Ángeles García Escrivá and Carmen Grau Lacal. \emph {Machine translation of anonymized documents with human-in-the-loop}}{417}{section*.66}%
+\contentsline {section}{Marjolene Paulo, Vera Cabarrão, Helena Moniz, Miguel Menezes, Rachel Grewcock and Eduardo Farah. \emph {Context-aware and gender-neutral Translation Memories}}{425}{section*.67}%
+\contentsline {section}{Jose-Manuel De-la-Torre-Vilariño, Juan-Luis García-Mendoza and Alessia Petrucci. \emph {Improving Machine Translation in the E-commerce Luxury Space. A case study}}{433}{section*.68}%
+\contentsline {section}{Mariana Cabeça, Marianna Buchicchio, Madalena Gonçalves, Christine Maroti, João Godinho, Pedro Coelho, Helena Moniz and Alon Lavie. \emph {Quality Fit for Purpose: Building Business Critical Errors Test Suites}}{438}{section*.69}%
+\contentsline {section}{Maja Popovic, Vasudevan Nedumpozhimana, Meegan Gower, Sneha Rautmare, Nishtha Jain and John Kelleher. \emph {Using MT for multilingual covid-19 case load prediction from social media texts}}{448}{section*.70}%
+\contentsline {section}{Matthias Wirth, Volker D. Hähnke, Franco Mascia, Arnaud Wéry, Konrad Vowinckel, Marco del Rey, Raúl Mohedano del Pozo, Pau Montes and Alexander Klenner-Bajaja. \emph {Building Machine Translation Tools for Patent Language: A Data Generation Strategy at the European Patent Office}}{458}{section*.71}%
+\contentsline {section}{Rebecca Knowles, Samuel Larkin, Marc Tessier and Michel Simard. \emph {Terminology in Neural Machine Translation: A Case Study of the Canadian Hansard}}{467}{section*.72}%
+\contentsline {chapter}{Products and projects}{475}{section*.73}%
+\contentsline {section}{Paola Ruffo, Joke Daems and Lieve Macken. \emph {Developing User-centred Approaches to Technological Innovation in Literary Translation (DUAL-T)}}{476}{section*.74}%
+\contentsline {section}{Marie-Aude Lefer, Romane Bodart, Adam Obrusnik and Justine Piette. \emph {The Post-Edit Me! project}}{478}{section*.75}%
+\contentsline {section}{Antoni Oliver, Mercè Vàzquez, Marta Coll-Florit, Sergi Álvarez, Víctor Suárez, Claudi Aventín-Boya, Cristina Valdés, Mar Font and Alejandro Pardos. \emph {TAN-IBE: Neural Machine Translation for the romance languages of the Iberian Peninsula}}{480}{section*.76}%
+\contentsline {section}{Cristina Toledo Báez. \emph {GAMETRAPP: Training app for post-editing neural machine trans-lation using gamification in professional settings}}{482}{section*.77}%
+\contentsline {section}{Bram Vanroy, Arda Tezcan and Lieve Macken. \emph {MATEO: MAchine Translation Evaluation Online}}{484}{section*.78}%
+\contentsline {section}{Vincent Vandeghinste, Dimitar Shterionov, Mirella De Sisto, Aoife Brady, Mathieu De Coster, Lorraine Leeson, Josep Blat, Frankie Picron, Marcello Paolo Scipioni, Aditya Parikh, Louis ten Bosch, John O'Flaherty, Joni Dambre, Jorn Rijckaert, Bram Vanroy, Victor Ubieto Nogales, Santiago Egea Gomez, Ineke Schuurman, Gorka Labaka, Adrián Núñez-Marcos, Irene Murtagh, Euan McGill and Horacio Saggion. \emph {SignON: Sign Language Translation. Progress and challenges.}}{486}{section*.79}%
+\contentsline {section}{Mirella De Sisto, Vincent Vandeghinste, Lien Soetemans, Caro Brosens and Dimitar Shterionov. \emph {GoSt-ParC-Sign: Gold Standard Parallel Corpus of Sign and spoken language}}{488}{section*.80}%
+\contentsline {section}{Marta Bañón, Mălina Chichirău, Miquel Esplà-Gomis, Mikel Forcada, Aarón Galiano-Jiménez, Taja Kuzman, Nikola Ljubešić, Rik van Noord, Leopoldo Pla Sempere, Gema Ramírez-Sánchez, Peter Rupnik, Vit Suchomel, Antonio Toral and Jaume Zaragoza-Bernabeu. \emph {MaCoCu: Massive collection and curation of monolingual and bilingual data: focus on under-resourced languages}}{490}{section*.81}%
+\contentsline {section}{Mathias Müller, Sarah Ebling, Eleftherios Avramidis, Alessia Battisti, Michèle Berger, Richard Bowden, Annelies Braffort, Necati Cihan Camgoz, Cristina España-Bonet, Roman Grundkiewicz, Zifan Jiang, Oscar Koller, Amit Moryossef, Regula Perrollaz, Sabine Reinhard, Annette Rios Gonzales, Dimitar Shterionov, Sandra Sidler-Miserez, Katja Tissi and Davy Van Landuyt. \emph {First WMT Shared Task on Sign Language Translation (WMT-SLT22)}}{492}{section*.82}%
+\contentsline {section}{Maarit Koponen, Mary Nurminen, Nina Havumetsä and Juha Lång. \emph {DECA: Democratic epistemic capacities in the age of algorithms}}{494}{section*.83}%
+\contentsline {section}{Yves Scherrer, Olli Kuparinen and Aleksandra Miletic. \emph {CorCoDial - Machine translation techniques for corpus-based computational dialectology}}{496}{section*.84}%
+\contentsline {section}{Julian Hamm and Judith Klein. \emph {How STAR Transit NXT can help translators measure and increase their MT post-editing efficiency}}{498}{section*.85}%
+\contentsline {section}{Lucía Ormaechea, Pierrette Bouillon, Maximin Coavoux, Emmanuelle Esperança-Rodier, Johanna Gerlach, Jerôme Goulian, Benjamin Lecouteux, Cécile Macaire, Jonathan Mutal, Magali Norré, Adrien Pupier and Didier Schwab. \emph {PROPICTO: Developing Speech-to-Pictograph Translation Systems to Enhance Communication Accessibility}}{500}{section*.86}%
+\contentsline {section}{Mikko Aulamo, Nikolay Bogoychev, Shaoxiong Ji, Graeme Nail, Gema Ramírez-Sánchez, Jörg Tiedemann, Jelmer van der Linde and Jaume Zaragoza. \emph {HPLT: High Performance Language Technologies}}{502}{section*.87}%
+\contentsline {chapter}{Sponsors}{504}{chapter*.88}%

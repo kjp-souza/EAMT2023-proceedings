@@ -26,7 +26,7 @@ There is a simple video tutorial on how to work with LaTex files and render pdf 
 
 ## Working with the proceedings for ACL on VS Code
 
-Download the whole project folder in this GitHUb repository, extract it and open as the following on VS Code:
+Download the whole project folder in this GitHub repository, extract it and open as the following on VS Code:
 
 Click "File" > "Open folder" > select the whole folder where your project is located on your computer > click "Open".
 

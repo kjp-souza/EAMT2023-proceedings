@@ -20,7 +20,7 @@ Here is where you can install VS Code extensions directly from the program:
     3 - **LaTex Workshop**  
     4 - **Python**. Then, click the button to install them and after it is complete, restart the program.      
 
-![VS Code Extensions](read-me-images/vscode-extensions.png?raw=true)  
+![VS Code Extensions](https://raw.githubusercontent.com/kjp-souza/EAMT2023-proceedings/master/ACLPUB/read-me-images/vscode-extensions.png)
 
 There is a simple video tutorial on how to work with LaTex files and render pdf files from them for free using tools like VS Code, LaTex Workshop, MikTex and Strawberry Pearl. This video also explains how to install VS Code. Here is the tutorial for [Windows](https://www.youtube.com/watch?v=4lyHIQl4VM8) and [Mac](https://www.youtube.com/watch?v=CmagZthwhaY) operating systems. If you are using Linux, you can follow a similar procedure for WIndows, but you will need only the LaTex Workshop extension, MikTex and adjust the JSON file on VS Code. Follow all the steps in the video, then proceed to opening a LaTex project to work on VS Code.
 
@@ -30,12 +30,12 @@ Download the whole project folder in this GitHub repository, extract it and open
 
 Click "File" > "Open folder" > select the whole folder where your project is located on your computer > click "Open".
 
-![Opening a project](read-me-images/open-vscode.png?raw=true)
+![Opening a project](https://raw.githubusercontent.com/kjp-souza/EAMT2023-proceedings/master/ACLPUB/read-me-images/open-vscode.png)
 
 In case you downloaded this project, you will see the whole project folder in the file explorer on VS Code with all its folders and sub-folders.
 You can also use the .tex (LaTex) file as a template and replace the text information and links with your own proceedings text, links and papers.
 
-![EAMT Project Folders](read-me-images/eamt-folders.png?raw=true)
+![EAMT Project Folders](https://raw.githubusercontent.com/kjp-souza/EAMT2023-proceedings/master/ACLPUB/read-me-images/eamt-folders.png)
 
 **NOTE:** The pdf folder in this repository only contains partial files as mere examples and it's not complete with all the papers that were included in the EAMT Conference. So, you should use it only as a guide and substitute all the pdf files with your own proceedings papers. The script only runs and works correctly after you included all your paper pdf files there, which have to be correctly  linked in the `\addpaper{}` section on your .tex file (LaTex).
 
@@ -62,15 +62,15 @@ All the required information can be retrieved from EasyChair or easily provided 
 
 Here are screenshots of how your folders on Windows should look like to make it a bit more descriptive:
 
-![1 - ACLPUB Folder](read-me-images/folder1.png?raw=true)
+![1 - ACLPUB Folder](https://raw.githubusercontent.com/kjp-souza/EAMT2023-proceedings/master/ACLPUB/read-me-images/folder1.png)
 
 The ACL folder should contain the sub-folders named exactly "info" with your specific project information, "pdf" with all the pdf files that are going to be added.
 
-![1 - Info Folder](read-me-images/folder2.png?raw=true) 
+![1 - Info Folder](https://raw.githubusercontent.com/kjp-souza/EAMT2023-proceedings/master/ACLPUB/read-me-images/folder2.png) 
 
 The subfolder info should contain an .html file with your abstracts (optional), a .tsv file with your papers index, a .txt with metadata and the .toc file, which is automatically generated when you edit your LaTex proceedings .tex file (copy the .toc to this folder after you're done with your LaTex project before running the Python script).
 
-![1 - PDF Folder](read-me-images/folder3.png?raw=true)
+![1 - PDF Folder](https://raw.githubusercontent.com/kjp-souza/EAMT2023-proceedings/master/ACLPUB/read-me-images/folder3.png)
 
 Copy all your pdfs to this folder. 
 
@@ -145,13 +145,13 @@ Here are some ways to run these scripts on VS Code:
 
 Right click with the mouse on the "ACLPUB" folder, as shown on the image example:
 
-![Running ACL script on VS Code terminal - step 1](read-me-images/run-acl_script.png?raw=true)
+![Running ACL script on VS Code terminal - step 1](https://raw.githubusercontent.com/kjp-souza/EAMT2023-proceedings/master/ACLPUB/read-me-images/run-acl_script.png)
 
 
 Simply past the code line mentioned above on the integrated terminal that pops up at the lower box and press the "Enter" key. 
 
 
-![Running ACL script on VS Code terminal - step 1](read-me-images/run-acl_script2.png?raw=true)
+![Running ACL script on VS Code terminal - step 1](https://raw.githubusercontent.com/kjp-souza/EAMT2023-proceedings/master/ACLPUB/read-me-images/run-acl_script2.png)
 
 You will see that the script will run and create the proceedings folder with all the files needed and expected by the ACL injection. When the script has finished, you will see the following additional files in the `proceedings` folder.
 
@@ -174,7 +174,7 @@ You will see that the script will run and create the proceedings folder with all
 
 Here is also a screenshot to illustrate the proceedings folder and its contents produced by the Easy2acl script (taken from Windows OS).
 
-![Proceedings folder and its contents](read-me-images/proceedings-folder.png?raw=true)
+![Proceedings folder and its contents](https://raw.githubusercontent.com/kjp-souza/EAMT2023-proceedings/master/ACLPUB/read-me-images/proceedings-folder.png)
 
 
 This is the input format that [the ingestion scripts for the ACL Anthology](https://github.com/acl-org/ACLPUB) expect and this is the folder that will need to be compacted before sharing.
